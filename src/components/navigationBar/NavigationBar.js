@@ -1,11 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./NavigationBar.css";
-
+import DartmouthHealthLogo from "../../images/NavigationBarImages/DartmouthHealthLogo.png";
 function NavigationBar() {
   return (
     <nav className="NavigationBar">
       <div className="NavigationBarLeft">
+        <img
+          className="DartmouthHealthLogo"
+          src={DartmouthHealthLogo}
+          alt="Dartmouth Health Logo"
+        ></img>
         <li>
           <Link className="NavigationBarLinkItem">Dartmouth Health</Link>
         </li>
