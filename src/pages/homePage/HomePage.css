@@ -1,0 +1,246 @@
+.HomePage {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+}
+.SectionOne {
+  background-color: #004240;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  max-height: 47vw;
+}
+
+.SectionOneRight {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.SectionOneLeft {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.LandingImage {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 47vw;
+}
+
+.SectionOneHeader {
+  font-size: 3rem;
+  margin-left: 8.5rem;
+  color: white;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  margin-top: 7.5rem;
+}
+
+.SectionOneParagraph {
+  font-size: 1.25rem;
+  margin-left: 8.5rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  color: #d6fffe;
+  margin-bottom: 5rem;
+}
+
+.SectionOneButton {
+  margin-left: 8.5rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: #004240;
+  border: solid white;
+}
+
+.SectionTwoHeader {
+  font-size: 2rem;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.SectionTwoContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  gap: 5rem;
+}
+
+.Insight {
+  display: flex;
+}
+
+.InsightNumberBox {
+  width: 2.25rem;
+  height: 2.25rem;
+  background-color: #005350;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 2rem;
+  margin-top: 1rem;
+}
+
+.InsightHeader {
+  font-size: 1.5rem;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+}
+
+.InsightParagraph {
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  color: #004240;
+  font-weight: 250;
+}
+
+.MegaphoneImage {
+  margin-top: 10rem;
+}
+
+.SectionThree {
+  margin-top: 7.5rem;
+  margin-bottom: 10rem;
+}
+
+.SectionThreeHeader {
+  font-size: 3rem;
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 2.5rem;
+}
+
+.SectionThreeSubHeader {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 250;
+  margin-bottom: 10rem;
+}
+
+.HealthTopics {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  margin-bottom: 5rem;
+}
+
+.HealthTopicBox {
+  width: 22rem;
+  height: 25rem;
+  box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.HealthTopicImageBox {
+  width: 22rem;
+  height: 14.5rem;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.HealthTopicHeader {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-left: 1.25rem;
+  margin-top: 1rem;
+}
+
+.HealthTopicParagraph {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 200;
+  margin-left: 1.25rem;
+  height: 4rem;
+  margin-top: 0rem;
+}
+
+.LearnMoreButton {
+  position: absolute;
+  display: inline-flex;
+  cursor: pointer;
+  right: 2rem;
+  bottom: 1.15rem;
+}
+
+.LearnMoreText {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 200;
+  opacity: 0;
+  position: absolute;
+  transition: opacity 0.3s ease 0.15s;
+}
+
+.LearnMoreButton:hover .LearnMoreText {
+  opacity: 1;
+}
+
+.LearnMoreButton:not(:hover) .LearnMoreText {
+  opacity: 0;
+  transition: opacity 0s ease 0s;
+}
+
+.ArrowCircle {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 2rem;
+  transition: width 0.3s ease;
+  position: relative;
+}
+
+.LearnMoreButton:hover .ArrowCircle {
+  width: 6rem;
+  justify-content: space-between;
+  padding: 0 0.75rem;
+}
+
+.Arrow {
+  border: solid black;
+  border-width: 0 0.1rem 0.1rem 0;
+  padding: 0.3rem;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  margin-left: 0;
+  transition: margin 0.3s ease;
+}
+
+.LearnMoreButton:hover .Arrow {
+  margin-left: auto;
+}
+
+.Arrow::before {
+  content: "";
+  position: absolute;
+  width: 1.1rem;
+  left: -1rem;
+  height: 0.1rem;
+  background-color: black;
+  transform: rotate(45deg) translate(20%, -965%);
+  transform-origin: left center;
+}
