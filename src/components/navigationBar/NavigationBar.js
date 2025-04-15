@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./NavigationBar.css";
 import DartmouthHealthLogo from "../../images/NavigationBarImages/DartmouthHealthLogo.png";
@@ -9,6 +9,20 @@ function NavigationBar() {
   const toggleMenu = () => {
     setIsClicked(!isClicked);
   };
+
+  useEffect(() => {
+    const checkWindowWidth = () => {
+      if (window.innerWidth > 1250) {
+        setIsClicked(false);
+      }
+    };
+
+    window.addEventListener("resize", checkWindowWidth);
+
+    return () => {
+      window.removeEventListener("resize", checkWindowWidth);
+    };
+  }, []);
 
   return (
     <nav className="NavigationBar">
