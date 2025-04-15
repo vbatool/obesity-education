@@ -15,6 +15,7 @@
 .SectionOneRight {
   width: 50%;
   box-sizing: border-box;
+  margin-left: 8.5rem;
 }
 
 .SectionOneLeft {
@@ -31,7 +32,6 @@
 
 .SectionOneHeader {
   font-size: 3rem;
-  margin-left: 8.5rem;
   color: white;
   font-family: "Playfair Display", serif;
   font-weight: 400;
@@ -40,15 +40,13 @@
 
 .SectionOneParagraph {
   font-size: 1.25rem;
-  margin-left: 8.5rem;
   font-family: "Roboto", sans-serif;
   font-weight: 200;
   color: #d6fffe;
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
 }
 
 .SectionOneButton {
-  margin-left: 8.5rem;
   font-family: "Roboto", sans-serif;
   font-size: 1.25rem;
   color: white;
@@ -71,7 +69,8 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 100%;
+  align-items: center;
+  width: 85%;
   margin: 0 auto;
   gap: 5rem;
 }
@@ -83,6 +82,8 @@
 .InsightNumberBox {
   width: 2.25rem;
   height: 2.25rem;
+  min-height: 2.25rem;
+  min-width: 2.25rem;
   background-color: #005350;
   color: white;
   font-family: "Times New Roman", Times, serif;
@@ -115,6 +116,9 @@
 .SectionThree {
   margin-top: 7.5rem;
   margin-bottom: 10rem;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .SectionThreeHeader {
@@ -135,6 +139,9 @@
 
 .HealthTopics {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
   gap: 2.5rem;
   margin-bottom: 5rem;
@@ -243,4 +250,86 @@
   background-color: black;
   transform: rotate(45deg) translate(20%, -965%);
   transform-origin: left center;
+}
+
+@media screen and (max-width: 1385px) {
+  .SectionOne {
+    flex-direction: column;
+    max-height: none;
+  }
+
+  .SectionOneRight {
+    margin-top: 5rem;
+    width: 85%;
+    box-sizing: border-box;
+    margin-bottom: 5rem;
+    margin-left: 0rem;
+    text-align: center;
+  }
+
+  .SectionOneParagraph br {
+    display: none;
+  }
+
+  .LandingImage {
+    display: none;
+    max-height: none;
+    margin-bottom: 5rem;
+  }
+
+  .InsightParagraph br {
+    display: none;
+  }
+
+  .SectionThreeSubHeader br {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .SectionTwoContent {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .MegaphoneImage {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    min-width: none;
+  }
+
+  .Insight {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 5rem;
+    margin-right: 5rem;
+    margin-left: 5rem;
+  }
+
+  .InsightNumberBox{
+    margin-top: 0rem;
+    margin-right: 0rem;
+
+  }
+
+  .SectionThree {
+    margin-top: 0rem;
+  }
+
+  .SectionThreeSubHeader {
+    margin-bottom: 8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .SectionOneHeader br {
+    display: none;
+  }
+  .Insight {
+    margin-right: 0rem;
+    margin-left: 0rem;
+  }
 }

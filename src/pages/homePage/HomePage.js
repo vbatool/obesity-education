@@ -16,15 +16,14 @@ function HomePage() {
         <div className="SectionOneRight">
           <h1 className="SectionOneHeader">
             Discover health strategies <br></br> through understanding obesity{" "}
-            <br></br>
             biology
           </h1>
           <p className="SectionOneParagraph">
             Explore the health topics listed below to understand different{" "}
             <br></br>
             aspects of weight management, helping you make informed <br></br>
-            decisions about seeking healthcare options that meet your unique{" "}
-            <br></br>needs.
+            decisions about seeking healthcare options that meet your <br></br>
+            unique needs.
           </p>
           <button className="SectionOneButton">Learn More</button>
         </div>
@@ -106,7 +105,6 @@ function HomePage() {
 
             <div className="Insight">
               <div className="InsightNumberBox"> 4</div>
-
               <div className="InsightTextBox">
                 <h1 className="InsightHeader">OBESITY IS MANAGEABLE</h1>
                 <p className="InsightParagraph">
@@ -223,9 +221,7 @@ function HomePage() {
               </div>
             </div>
           </div>
-        </div>
 
-        <div className="HealthTopics">
           <div className="HealthTopicBox">
             <div
               className="HealthTopicImageBox"
