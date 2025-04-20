@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./HomePage.css";
 import LandingImage from "../../images/HomePageImages/LandingImage.png";
 import MegaphoneImage from "../../images/HomePageImages/MegaphoneImage.png";
@@ -166,12 +167,17 @@ function HomePage() {
               genetics, environment, diet, <br></br> stress and medications,
               among others.
             </p>
-            <div class="LearnMoreButton">
-              <div class="ArrowCircle" style={{ backgroundColor: "#e4f7f3" }}>
-                <span class="LearnMoreText">Learn more</span>
-                <i class="Arrow"></i>
+            <Link
+              to={"/health-topics/causes-of-obesity"}
+              style={{ color: "inherit" }}
+            >
+              <div class="LearnMoreButton">
+                <div class="ArrowCircle" style={{ backgroundColor: "#e4f7f3" }}>
+                  <span class="LearnMoreText">Learn more</span>
+                  <i class="Arrow"></i>
+                </div>
               </div>
-            </div>
+            </Link>
           </div>
 
           <div className="HealthTopicBox">

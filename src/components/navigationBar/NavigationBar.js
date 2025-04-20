@@ -4,16 +4,22 @@ import "./NavigationBar.css";
 import DartmouthHealthLogo from "../../images/NavigationBarImages/DartmouthHealthLogo.png";
 
 function NavigationBar() {
-  const [isClicked, setIsClicked] = useState(false);
+  const [menuOpen, setmenuOpen] = useState(false);
+
+  const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const toggleMenu = () => {
-    setIsClicked(!isClicked);
+    setmenuOpen(!menuOpen);
+  };
+
+  const toggleDropdown = () => {
+    setDropdownOpen(!dropdownOpen);
   };
 
   useEffect(() => {
     const checkWindowWidth = () => {
       if (window.innerWidth > 1250) {
-        setIsClicked(false);
+        setmenuOpen(false);
       }
     };
 
@@ -28,14 +34,14 @@ function NavigationBar() {
     <nav className="NavigationBar">
       <div className="NavigationBarLeft">
         <div className="LogoContainer">
-          <img
-            className="DartmouthHealthLogo"
-            src={DartmouthHealthLogo}
-            alt="Dartmouth Health Logo"
-          ></img>
-          <li>
-            <Link className="NavigationBarLinkItem">Dartmouth Health</Link>
-          </li>
+          <Link to="/" className="NavigationBarLinkItem">
+            <img
+              className="DartmouthHealthLogo"
+              src={DartmouthHealthLogo}
+              alt="Dartmouth Health Logo"
+            ></img>
+            <span> Dartmouth Health</span>
+          </Link>
         </div>
 
         <div className="NavigationBarMenuIcon" onClick={toggleMenu}>
@@ -43,10 +49,26 @@ function NavigationBar() {
         </div>
       </div>
 
-      <div className={`NavigationBarRight ${isClicked ? "Clicked" : ""}`}>
+      <div className={`NavigationBarRight ${menuOpen ? "Clicked" : ""}`}>
         <ul className="NavigationBarLinkList">
-          <li>
-            <Link className="NavigationBarLinkItem">Health Topics</Link>
+          <li className="NavigationBarLinkDropdown">
+            <div className="DropdownToggle" onClick={toggleDropdown}>
+              <span className="NavigationBarLinkItem">Health Topics</span>
+              <i
+                className={`DropdownArrow ${dropdownOpen ? "Clicked" : ""}`}
+              ></i>
+            </div>
+
+            {dropdownOpen && (
+              <div className="DropdownMenu">
+                <Link
+                  to={"/health-topics/causes-of-obesity"}
+                  className="DropdownMenuItem"
+                >
+                  Causes of Obesity
+                </Link>
+              </div>
+            )}
           </li>
           <li>
             <Link className="NavigationBarLinkItem">Patient Stories</Link>

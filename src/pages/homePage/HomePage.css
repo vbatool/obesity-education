@@ -273,8 +273,7 @@
 
   .LandingImage {
     display: none;
-    max-height: none;
-    margin-bottom: 5rem;
+ 
   }
 
   .InsightParagraph br {
@@ -309,10 +308,9 @@
     margin-left: 5rem;
   }
 
-  .InsightNumberBox{
+  .InsightNumberBox {
     margin-top: 0rem;
     margin-right: 0rem;
-
   }
 
   .SectionThree {

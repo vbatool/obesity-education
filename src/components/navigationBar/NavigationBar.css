@@ -39,8 +39,16 @@
 .NavigationBarLinkList {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 7rem;
   margin-right: 5vw;
+}
+
+.NavigationBarLinkDropdown {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: flex-start;
 }
 
 .DartmouthHealthLogo {
@@ -52,11 +60,74 @@
   align-items: center;
 }
 
+.LogoContainer a {
+  display: flex;
+  align-items: center;
+}
+
 .NavigationBarMenuIcon {
   font-size: 2.5rem;
   cursor: pointer;
   display: none;
   color: black;
+}
+
+.DropdownArrow {
+  display: inline-block;
+  width: 0.65rem;
+  height: 0.65rem;
+  border: solid #005350;
+  border-width: 0 0.1rem 0.1rem 0;
+  transform: rotate(45deg);
+  margin-left: 1rem;
+  margin-bottom: 0.2rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.DropdownArrow.Clicked {
+  transform: rotate(-135deg);
+  margin-bottom: -0.2rem;
+}
+
+.DropdownMenu {
+  position: absolute;
+  top: calc(100% + 1rem);
+  left: 0;
+  padding-left: 0;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 0.5rem;
+  min-width: 13.5rem;
+  padding: 0.5rem;
+  z-index: 1;
+}
+
+.DropdownMenuItem {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  display: block;
+  padding: 0.5rem;
+  padding-left: 0rem;
+  text-align: left;
+  transition: background-color 0.2s ease;
+}
+
+.DropdownMenu:hover {
+  background-color: #e5f6f6;
+}
+
+.DropdownToggle {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.DropdownToggle .NavigationBarLinkItem {
+  margin-left: 0.5rem;
 }
 
 @media screen and (max-width: 1250px) {
@@ -89,5 +160,13 @@
     flex-direction: column;
     text-align: left;
     font-size: 1.25rem;
+  }
+
+  .DropdownMenuItem {
+    font-size: 1.25rem;
+  }
+
+  .DropdownMenu:hover {
+    background-color: white;
   }
 }
