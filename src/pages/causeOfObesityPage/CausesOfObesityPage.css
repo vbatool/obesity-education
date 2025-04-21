@@ -1,0 +1,447 @@
+.CausesOfObesityPage {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+}
+
+.COOPSectionOne {
+  background-color: #004240;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  min-height: 47vw;
+  max-height: 47vw;
+}
+
+.COOPSectionOneHeader {
+  font-size: 3rem;
+  color: white;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  margin-top: 7.5rem;
+}
+
+.COOPSectionOneLeft {
+  width: 60%;
+  box-sizing: border-box;
+  margin-left: 8.5rem;
+}
+
+.COOPSectionOneRight {
+  width: 40%;
+  box-sizing: border-box;
+  margin-right: 3rem;
+}
+
+.CausesOfObesityPageLandingImage {
+  margin-top: 12rem;
+}
+
+.COOPSectionOneParagraph {
+  font-size: 1.25rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  color: #d6fffe;
+  margin-bottom: 4rem;
+}
+
+.COOPSectionTwo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.COOPSectionTwoHeader {
+  font-size: 2rem;
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  color: #004240;
+}
+
+.COOPTabNavigationBar {
+  width: 100%;
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+.COOPTabContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  border-bottom: 0.1rem solid;
+}
+
+.COOPTabButton {
+  background: none;
+  border: none;
+  padding: 2rem 0;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #707070;
+  cursor: pointer;
+  position: relative;
+  flex: 1;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+.COOPTabButton.active {
+  color: #1d7c69;
+  font-weight: 700;
+}
+
+.COOPTabButton.active::after {
+  content: "";
+  position: absolute;
+  height: 0.2rem;
+  bottom: -0.1rem;
+  left: 0;
+  background-color: #1d7c69;
+  width: 100%;
+  flex: 1;
+}
+
+.COOPTabContentContainer {
+  padding: 10rem 2rem;
+}
+
+.COOPTabContent {
+  width: 100%;
+}
+
+.COOPTabContentHeader {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+
+.BiologicalSectionOne {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.BiologicalSectionOneParagraph {
+  font-size: 1.25rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+}
+
+.BiologicalSectionTwo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 5rem;
+}
+
+.BiologicalSectionTwoLeft {
+  width: 55%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.BiologicalSectionTwoRight {
+  width: 45%;
+  box-sizing: border-box;
+  margin-left: 5rem;
+}
+
+.BiologicalSectionTwoHeader {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 1.9rem;
+}
+
+.BiologicalSectionSubHeader {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 200;
+  text-align: center;
+}
+
+.BiologicalSectionTwoRightParagraph {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 200;
+}
+
+.BiologicalSectionLink {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 200;
+  text-align: center;
+  color: #004240;
+}
+
+.DNAWithNumbersImage {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.BiologicalSectionDivider {
+  border-bottom: 0.2rem solid;
+  border-color: #fee6dc;
+  margin-top: 7.5rem;
+  margin-bottom: 7.5rem;
+}
+
+.BiologicalSectionThree {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.BiologicalSectionThreeLeft {
+  width: 45%;
+  box-sizing: border-box;
+  margin-right: 2rem;
+}
+
+.BiologicalSectionThreeRight {
+  width: 55%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 2rem;
+}
+
+.BiologicalSectionThreeParagraph {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 200;
+  margin-left: 2rem;
+}
+
+.BiologicalSectionThreeLink {
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  color: #408f6f;
+}
+
+.NutritionSectionOne {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.NutritionSectionOneParagraph {
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-size: 1.25rem;
+}
+
+.NutritionSectionTwo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.NutritionSectionTwoParagraph {
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-size: 1.25rem;
+}
+
+.NutritionSectionThree {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.NutritionSectionThreeHeader {
+  font-size: 2rem;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+.NutritionTableTwoImage {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.NutritionSectionThreeParagraph {
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-size: 1.25rem;
+}
+
+.NutritionSectionFourHeader {
+  font-size: 2rem;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.ProcessedFoodGuideImage {
+  margin-top: 2rem;
+}
+
+.MedicinesSectionOne {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.MedicinesSectionOneParagraph {
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-size: 1.25rem;
+}
+
+.MedcineSectionOneList {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.MedcineSectionOneList li {
+  position: relative;
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+}
+
+.MedcineSectionOneList li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.4rem;
+  background-color: #408f6f;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 0.1rem;
+}
+
+.MedcineSectionOneListItem {
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  position: relative;
+  margin-left: 2rem;
+}
+
+.MedicinesSectionTwo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.MedicationsTableImage {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.MedicinesSectionTwoParagraph {
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-size: 1.25rem;
+}
+
+.StressSectionOne {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8rem;
+}
+
+.StressSectionOneParagraph {
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-size: 1.25rem;
+}
+
+.BrainImage {
+  max-height: 16rem;
+  max-width: 14rem;
+}
+
+.CortisolImage {
+  max-height: 8rem;
+  max-width: 21rem;
+}
+
+.DigestiveAndBrainImage {
+  max-height: 13rem;
+  max-width: 29rem;
+}
+
+.ImageFooter {
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-size: 1.125rem;
+}
+
+.StressSectionOneRight {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.StressSectionOneRightDoubleFooter {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.StressSectionTwoHeader {
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-size: 1.25rem;
+  margin-bottom: 5rem;
+}
+
+.StressSectionTwoContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-direction: row;
+  gap: 2rem;
+  position: relative;
+  min-height: 22rem;
+}
+
+.StressContentGroup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 33%;
+}
+
+.StressContentFooters {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-size: 1.125rem;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: absolute;
+  bottom: 0;
+}

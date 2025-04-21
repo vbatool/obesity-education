@@ -32,54 +32,56 @@ function NavigationBar() {
 
   return (
     <nav className="NavigationBar">
-      <div className="NavigationBarLeft">
-        <div className="LogoContainer">
-          <Link to="/" className="NavigationBarLinkItem">
-            <img
-              className="DartmouthHealthLogo"
-              src={DartmouthHealthLogo}
-              alt="Dartmouth Health Logo"
-            ></img>
-            <span> Dartmouth Health</span>
-          </Link>
+      <div className="NavigationBarContent">
+        <div className="NavigationBarLeft">
+          <div className="LogoContainer">
+            <Link to="/" className="NavigationBarLinkItem">
+              <img
+                className="DartmouthHealthLogo"
+                src={DartmouthHealthLogo}
+                alt="Dartmouth Health Logo"
+              ></img>
+              <span> Dartmouth Health</span>
+            </Link>
+          </div>
+
+          <div className="NavigationBarMenuIcon" onClick={toggleMenu}>
+            ☰
+          </div>
         </div>
 
-        <div className="NavigationBarMenuIcon" onClick={toggleMenu}>
-          ☰
-        </div>
-      </div>
-
-      <div className={`NavigationBarRight ${menuOpen ? "Clicked" : ""}`}>
-        <ul className="NavigationBarLinkList">
-          <li className="NavigationBarLinkDropdown">
-            <div className="DropdownToggle" onClick={toggleDropdown}>
-              <span className="NavigationBarLinkItem">Health Topics</span>
-              <i
-                className={`DropdownArrow ${dropdownOpen ? "Clicked" : ""}`}
-              ></i>
-            </div>
-
-            {dropdownOpen && (
-              <div className="DropdownMenu">
-                <Link
-                  to={"/health-topics/causes-of-obesity"}
-                  className="DropdownMenuItem"
-                >
-                  Causes of Obesity
-                </Link>
+        <div className={`NavigationBarRight ${menuOpen ? "Clicked" : ""}`}>
+          <ul className="NavigationBarLinkList">
+            <li className="NavigationBarLinkDropdown">
+              <div className="DropdownToggle" onClick={toggleDropdown}>
+                <span className="NavigationBarLinkItem">Health Topics</span>
+                <i
+                  className={`DropdownArrow ${dropdownOpen ? "Clicked" : ""}`}
+                ></i>
               </div>
-            )}
-          </li>
-          <li>
-            <Link className="NavigationBarLinkItem">Patient Stories</Link>
-          </li>
-          <li>
-            <Link className="NavigationBarLinkItem">Resources</Link>
-          </li>
-          <li>
-            <Link className="NavigationBarLinkItem">About</Link>
-          </li>
-        </ul>
+
+              {dropdownOpen && (
+                <div className="DropdownMenu">
+                  <Link
+                    to={"/health-topics/causes-of-obesity"}
+                    className="DropdownMenuItem"
+                  >
+                    Causes of Obesity
+                  </Link>
+                </div>
+              )}
+            </li>
+            <li>
+              <Link className="NavigationBarLinkItem">Patient Stories</Link>
+            </li>
+            <li>
+              <Link className="NavigationBarLinkItem">Resources</Link>
+            </li>
+            <li>
+              <Link className="NavigationBarLinkItem">About</Link>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
   );
