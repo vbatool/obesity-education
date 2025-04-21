@@ -196,12 +196,17 @@ function HomePage() {
               Our bodies resist weight loss as a protection <br></br>mechanism,
               requiring long-term lifestyle <br></br> adjustments.
             </p>
-            <div class="LearnMoreButton">
-              <div class="ArrowCircle" style={{ backgroundColor: "#E5EEFA" }}>
-                <span class="LearnMoreText">Learn more</span>
-                <i class="Arrow"></i>
+            <Link
+              to={"/health-topics/challenges-of-weight-loss"}
+              style={{ color: "inherit" }}
+            >
+              <div class="LearnMoreButton">
+                <div class="ArrowCircle" style={{ backgroundColor: "#E5EEFA" }}>
+                  <span class="LearnMoreText">Learn more</span>
+                  <i class="Arrow"></i>
+                </div>
               </div>
-            </div>
+            </Link>
           </div>
 
           <div className="HealthTopicBox">

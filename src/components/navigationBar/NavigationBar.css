@@ -95,7 +95,7 @@
 
 .DropdownMenu {
   position: absolute;
-  top: calc(100% + 1rem);
+  top: calc(100% + 0.5rem);
   left: 0;
   padding-left: 0;
   box-sizing: border-box;
@@ -113,13 +113,15 @@
   font-family: "Roboto", sans-serif;
   display: block;
   padding: 0.5rem;
-  padding-left: 0rem;
+  width: 100%;
+  box-sizing: border-box;
   text-align: left;
   transition: background-color 0.2s ease;
 }
 
-.DropdownMenu:hover {
+.DropdownMenuItem:hover {
   background-color: #e5f6f6;
+  width: 100%;
 }
 
 .DropdownToggle {

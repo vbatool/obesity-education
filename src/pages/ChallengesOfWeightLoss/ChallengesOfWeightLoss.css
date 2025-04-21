@@ -1,0 +1,158 @@
+.ChallengesOfWeightLoss {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+}
+
+.COWLSectionOne {
+  background-color: #004240;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  min-height: 38vw;
+  max-height: 38vw;
+  margin-top: 0;
+}
+
+.COWLSectionOneLeft {
+  width: 67%;
+  box-sizing: border-box;
+  margin-left: 8.5rem;
+}
+
+.COWLSectionOneRight {
+  width: 33%;
+  box-sizing: border-box;
+}
+
+.COWLSectionOneHeader {
+  font-size: 3.5rem;
+  color: white;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  margin-top: 7.5rem;
+}
+
+.COWLSectionOneParagraph {
+  font-size: 1.25rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  color: #d6fffe;
+}
+
+.COWLLandingImage {
+  margin-top: 18.5rem;
+}
+
+.COWLSectionTwo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.COWLSectionTwoParagraph {
+  font-size: 1.25rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+}
+
+.COWLSectionTwoHeader {
+  font-size: 2rem;
+  color: #004240;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  align-self: flex-start;
+  margin-left: 29.2rem;
+}
+
+.COWLSectionTwoList {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 3rem;
+}
+
+.COWLSectionTwoList li {
+  position: relative;
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+}
+
+.COWLSectionTwoList li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.4rem;
+  background-color: #408f6f;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 0.1rem;
+}
+
+.COWLSectionTwoListItem {
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  position: relative;
+  margin-left: 2rem;
+}
+
+.COWLSectionTwoVideoHeader {
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-size: 1.25rem;
+  color: #004240;
+}
+
+.COWLVideo {
+  max-width: 66rem;
+  max-height: 32rem;
+  border: 0.1rem solid;
+  margin-bottom: 3rem;
+}
+
+.Advice {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 66rem;
+  margin-left: 18rem;
+}
+
+.AdviceNumberBox {
+  width: 2.5rem;
+  height: 2.5rem;
+  min-height: 2.5rem;
+  min-width: 2.5rem;
+  background-color: #006650;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 2rem;
+  margin-top: 1rem;
+  border-radius: 1.25rem;
+}
+
+.AdviceParagraph {
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-size: 1.125rem;
+  flex: 1;
+  text-align: left;
+}
+
+.AdviceContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 5rem;
+}

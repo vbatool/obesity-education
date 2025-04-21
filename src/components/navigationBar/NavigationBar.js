@@ -68,6 +68,12 @@ function NavigationBar() {
                   >
                     Causes of Obesity
                   </Link>
+                  <Link
+                    to={"/health-topics/challenges-of-weight-loss"}
+                    className="DropdownMenuItem"
+                  >
+                    Challenges of Weight Loss
+                  </Link>
                 </div>
               )}
             </li>
