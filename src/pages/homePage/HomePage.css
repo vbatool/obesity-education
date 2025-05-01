@@ -255,6 +255,12 @@
 }
 
 @media screen and (max-width: 1385px) {
+  .SectionOneParagraph {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 1250px) {
   .SectionOne {
     flex-direction: column;
     max-height: none;
@@ -284,9 +290,7 @@
   .SectionThreeSubHeader br {
     display: none;
   }
-}
 
-@media screen and (max-width: 1150px) {
   .SectionTwoContent {
     flex-direction: column;
     align-items: center;

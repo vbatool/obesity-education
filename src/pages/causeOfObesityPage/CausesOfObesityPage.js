@@ -18,7 +18,7 @@ import ThinkingImage from "../../images/CausesOfObesityPageImages/ThinkingImage.
 import LowEnergyPerson from "../../images/CausesOfObesityPageImages/LowEnegryPerson.png";
 
 function CausesOfObesity() {
-  const [activeTab, setActiveTab] = useState("stress");
+  const [activeTab, setActiveTab] = useState("biological");
 
   const tabs = [
     { id: "biological", label: "Biological" },

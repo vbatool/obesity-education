@@ -1,15 +1,12 @@
-.NavigationBar {
-}
-
 .NavigationBarContent {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 85%;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 0.5rem;
   margin-bottom: -8rem;
-  margin-top: 2.5rem;
+  margin-top: 1.5rem;
   border-radius: 0.5rem;
   position: relative;
   background-color: white;
@@ -29,7 +26,8 @@
 }
 
 .NavigationBarRight {
-  font-size: 1rem;
+  font-size: 0.9rem;
+  font-weight: 450;
   font-family: "Roboto", sans-serif;
   display: block;
 }
@@ -77,8 +75,8 @@
 
 .DropdownArrow {
   display: inline-block;
-  width: 0.65rem;
-  height: 0.65rem;
+  width: 0.5rem;
+  height: 0.5rem;
   border: solid #005350;
   border-width: 0 0.1rem 0.1rem 0;
   transform: rotate(45deg);
@@ -109,7 +107,7 @@
 .DropdownMenuItem {
   text-decoration: none;
   color: inherit;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-family: "Roboto", sans-serif;
   display: block;
   padding: 0.5rem;
@@ -135,14 +133,15 @@
   margin-left: 0.5rem;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1250px) {
   .NavigationBarMenuIcon {
     display: block;
+    margin-right: 1rem;
   }
 
   .NavigationBarRight {
+    margin-top: 1rem;
     display: none;
-    width: 100%;
   }
 
   .NavigationBarLeft {
@@ -152,23 +151,51 @@
 
   .NavigationBarRight.Clicked {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     width: 100%;
+    padding-top: 1rem;
+    margin-top: 1rem;
+    border-top: 0.08rem solid;
+    border-color: black;
+    margin-right: -0.5rem;
+    margin-left: -0.5rem;
+    padding-left: 1.5rem;
+    width: calc(100% + 1rem);
+  }
+
+  .NavigationBarLinkItem.Health {
+    margin-left: -0.1rem;
+  }
+
+  .NavigationBarLinkList {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+    width: 100%;
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  .NavigationBarLinkList li {
+    width: 100%;
+    padding-left: 1rem;
+    margin-left: 0;
   }
 
   .NavigationBarContent {
     flex-direction: column;
     align-items: flex-start;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
   }
 
-  .NavigationBarLinkList {
-    flex-direction: column;
+  .DropdownMenu {
     text-align: left;
-    font-size: 1.25rem;
-  }
-
-  .DropdownMenuItem {
-    font-size: 1.25rem;
   }
 
   .DropdownMenu:hover {

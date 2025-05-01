@@ -54,7 +54,9 @@ function NavigationBar() {
           <ul className="NavigationBarLinkList">
             <li className="NavigationBarLinkDropdown">
               <div className="DropdownToggle" onClick={toggleDropdown}>
-                <span className="NavigationBarLinkItem">Health Topics</span>
+                <span className="NavigationBarLinkItem Health">
+                  Health Topics
+                </span>
                 <i
                   className={`DropdownArrow ${dropdownOpen ? "Clicked" : ""}`}
                 ></i>
