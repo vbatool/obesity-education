@@ -261,6 +261,10 @@
 }
 
 @media screen and (max-width: 1250px) {
+  .SectionOneParagraph {
+    margin-bottom: 4rem;
+  }
+
   .SectionOne {
     flex-direction: column;
     max-height: none;
