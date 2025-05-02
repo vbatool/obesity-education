@@ -35,7 +35,8 @@
 }
 
 .CausesOfObesityPageLandingImage {
-  margin-top: 12rem;
+  margin-top: 12vw;
+  height: 35vw;
 }
 
 .COOPSectionOneParagraph {
@@ -126,6 +127,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 .BiologicalSectionOneParagraph {
@@ -160,7 +162,7 @@
 .BiologicalSectionTwoHeader {
   font-family: "Playfair Display", serif;
   font-weight: 400;
-  font-size: 1.9rem;
+  font-size: 2rem;
 }
 
 .BiologicalSectionSubHeader {
@@ -313,12 +315,15 @@
 .MedcineSectionOneList {
   list-style-type: none;
   padding-left: 0;
+  width: 100%;
 }
 
 .MedcineSectionOneList li {
   position: relative;
   margin-bottom: 1rem;
   padding-left: 2rem;
+  display: flex;
+  align-items: flex-start;
 }
 
 .MedcineSectionOneList li:before {
@@ -330,6 +335,7 @@
   width: 0.75rem;
   height: 0.75rem;
   border-radius: 0.1rem;
+  transform: translateY(-10%);
 }
 
 .MedcineSectionOneListItem {
@@ -444,4 +450,157 @@
   align-items: flex-start;
   position: absolute;
   bottom: 0;
+}
+
+@media screen and (max-width: 1385px) {
+  .COOPSectionOneHeader {
+    margin-right: 3rem;
+  }
+  .COOPSectionOneHeader br {
+    display: none;
+  }
+  .COOPSectionOneParagraph br {
+    display: none;
+  }
+}
+
+.SectionBreak {
+  display: block;
+}
+
+@media screen and (max-width: 1250px) {
+  .COOPSectionOneHeader {
+    margin-right: 0rem;
+  }
+
+  .COOPSectionOneParagraph {
+    margin-bottom: 4rem;
+  }
+
+  .COOPSectionOne {
+    flex-direction: column;
+    max-height: none;
+  }
+
+  .COOPSectionOneLeft {
+    margin-top: 5rem;
+    width: 85%;
+    box-sizing: border-box;
+    margin-bottom: 5rem;
+    margin-left: 0rem;
+    text-align: center;
+  }
+
+  .CausesOfObesityPageLandingImage {
+    display: none;
+  }
+
+  .MedcineSectionOneList {
+    width: fit-content;
+    margin: 1rem auto;
+    text-align: left;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .BiologicalSectionOne,
+  .BiologicalSectionTwo,
+  .BiologicalSectionThree,
+  .NutritionSectionOne,
+  .NutritionSectionTwo,
+  .NutritionSectionThree,
+  .NutritionSectionFour,
+  .MedicinesSectionOne,
+  .MedicinesSectionTwo,
+  .StressSectionOne,
+  .StressSectionTwo {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  .StressSectionTwoContent {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .StressContentGroup {
+    width: 90%;
+  }
+
+  .StressContentFooters {
+    position: relative;
+  }
+
+  .SectionDivider {
+    display: block;
+    border-bottom: 0.2rem solid;
+    border-color: #fee6dc;
+    margin-top: 7.5rem;
+    margin-bottom: 5.5rem;
+  }
+
+  .COOPSectionTwoHeader br,
+  .BiologicalSectionOneParagraph br,
+  .BiologicalSectionSubHeader br,
+  .BiologicalSectionThreeParagraph br,
+  .BiologicalSectionTwoRightParagraph br,
+  .NutritionSectionOneParagraph br,
+  .NutritionSectionTwoParagraph br,
+  .NutritionSectionThreeParagraph br,
+  .MedicinesSectionOneParagraph br,
+  .MedicinesSectionTwoParagraph br,
+  .StressSectionOneParagraph br,
+  .StressContentFooters br {
+    display: none;
+  }
+
+  .BiologicalSectionOneLeft,
+  .BiologicalSectionOneRight,
+  .BiologicalSectionTwoLeft,
+  .BiologicalSectionTwoRight,
+  .BiologicalSectionThreeLeft,
+  .BiologicalSectionThreeRight,
+  .NutritionSectionOneLeft,
+  .NutritionSectionOneRight,
+  .MedicinesSectionOneLeft,
+  .MedicinesSectionOneRight,
+  .StressSectionOneLeft,
+  .StressSectionOneRight {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .BiologicalSectionOneParagraph,
+  .BiologicalSectionOneRight {
+    margin-top: 2.5rem;
+  }
+
+  .SectionBreak {
+    display: block !important;
+  }
+
+  .NutritionTableImage {
+    max-width: 60vw;
+  }
+
+  .PillsImage {
+    margin-top: 2.5rem;
+  }
+  .PillsImage,
+  .MedicationsTableImage,
+  .DNAImage,
+  .DNAWithNumbersImage,
+  .HeartImage {
+    max-width: 65vw;
+  }
+
+  .CausesOfObesityPageBottomImage,
+  .NutritionTableTwoImage,
+  .ProcessedFoodGuideImage {
+    max-width: 80vw;
+  }
 }

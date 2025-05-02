@@ -103,9 +103,6 @@ function CausesOfObesity() {
             <div className="BiologicalSectionDivider"></div>
 
             <div className="BiologicalSectionThree">
-              <div className="BiologicalSectionThreeLeft">
-                <img className="HeartImage" src={HeartImage} alt="Heart"></img>
-              </div>
               <div className="BiologicalSectionThreeRight">
                 <h2 className="COOPTabContentHeader">
                   <span style={{ color: "#408F6F", marginRight: "1rem" }}>
@@ -129,8 +126,8 @@ function CausesOfObesity() {
                   ”), metabolism slows down. People with <br></br>
                   hypothyroidism experience increased exhaustion, feel <br></br>{" "}
                   cold, and store excess fat.
-                  <br></br>
-                  <br></br>
+                  <br className="SectionBreak"></br>
+                  <br className="SectionBreak"></br>
                   Type II diabetes, or insulin resistance, also contributes{" "}
                   <br></br>to weight gain. Insulin is a messenger that regulates
                   the <br></br>levels of sugar (glucose) in the blood by telling
@@ -140,14 +137,19 @@ function CausesOfObesity() {
                   well, leading to high <br></br>glucose levels in the blood.
                   When glucose is not broken <br></br>down by the body, it is
                   stored in the body tissues as fat.
-                  <br></br>
-                  <br></br>
+                  <br className="SectionBreak"></br>
+                  <br className="SectionBreak"></br>
                   These conditions might be caused by genetics <br></br>
                   (inherited from your parents), however, they can be <br></br>{" "}
                   managed well with the right interventions and lifestyle{" "}
                   <br></br>
                   modifications. 
                 </p>
+                <p className="BiologicalSectionThreeParagraph"></p>
+              </div>
+
+              <div className="BiologicalSectionThreeLeft">
+                <img className="HeartImage" src={HeartImage} alt="Heart"></img>
               </div>
             </div>
           </div>
@@ -197,7 +199,6 @@ function CausesOfObesity() {
                 ></img>
               </div>
             </div>
-
             <div className="NutritionSectionTwo">
               <p className="NutritionSectionTwoParagraph">
                 Food marketing can be confusing. Some food items that are high
@@ -294,6 +295,7 @@ function CausesOfObesity() {
               </div>
             </div>
 
+            <div className="SectionDivider"></div>
             <div className="MedicinesSectionTwo">
               <img
                 className="MedicationsTableImage"
@@ -328,9 +330,9 @@ function CausesOfObesity() {
                   Stress can hurt more than just our mood- it can lead to weight
                   <br></br>
                   gain.
-                  <br></br>
-                  <br></br>
-                  <br></br>
+                  <br className="SectionBreak"></br>
+                  <br className="SectionBreak"></br>
+                  <br className="SectionBreak"></br>
                   When we are stressed our bodies release cortisol, the{" "}
                   <br></br> natural stress hormone. Think of cortisol like tiny
                   messages <br></br> in the blood stream released to prepare our
@@ -339,10 +341,10 @@ function CausesOfObesity() {
                   how the body processes <br></br> energy and can lead to
                   cravings for energy-dense sweet, <br></br>fatty, and salty
                   foods as shown in the figure on the right
-                  <br></br>
-                  <br></br>
-                  <br></br>
-                  <br></br>
+                  <br className="SectionBreak"></br>
+                  <br className="SectionBreak"></br>
+                  <br className="SectionBreak"></br>
+                  <br className="SectionBreak"></br>
                   Additionally, research has found that stress impacts <br></br>
                   sleep quality which may also contribute to weight <br></br>{" "}
                   gain. Sleep deprivation has been linked to an <br></br>
@@ -379,6 +381,7 @@ function CausesOfObesity() {
                 </div>
               </div>
             </div>
+            <div className="SectionDivider"></div>
             <div className="StressSectionTwo">
               <h3 className="StressSectionTwoHeader">
                 Sleep impacts your overall health in the following ways:
@@ -452,9 +455,8 @@ function CausesOfObesity() {
       </div>
       <div className="COOPSectionTwo">
         <h1 className="COOPSectionTwoHeader">
-          As a multifactorial condition, all the different contributors need to
-          be <br></br> studied in order to grasp a complete picture of the
-          causes
+          All the different contributors need to be studied in order to form a{" "}
+          <br></br> complete picture of the causes of weight gain
         </h1>
 
         <div className="COOPTabNavigationBar">
