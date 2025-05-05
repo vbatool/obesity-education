@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavigationBar from "./components/navigationBar/NavigationBar";
 import HomePage from "./pages/homePage/HomePage";
 import CausesOfObesity from "./pages/causeOfObesityPage/CausesOfObesityPage";
-import ChallengesOfWeightLoss from "./pages/ChallengesOfWeightLoss/ChallengesOfWeightLoss";
+import ChallengesOfWeightLoss from "./pages/challengesOfWeightLoss/ChallengesOfWeightLoss";
+import HealthScreenings from "./pages/healthScreenings/HealthScreenings";
 
 function App() {
   return (
@@ -19,6 +20,11 @@ function App() {
         <Route
           path="/health-topics/challenges-of-weight-loss"
           element={<ChallengesOfWeightLoss />}
+        />
+
+        <Route
+          path="/health-topics/health-screenings"
+          element={<HealthScreenings />}
         />
       </Routes>
     </Router>

@@ -1,0 +1,347 @@
+.HealthScreenings {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+}
+
+.HSSectionOne {
+  background-color: #004240;
+  display: flex;
+  justify-content: row-reverse;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  max-height: 47vw;
+  overflow: hidden;
+}
+
+.HSSectionOneRight {
+  width: 60%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 0;
+}
+
+.HSSectionOneLeft {
+  width: 40%;
+  box-sizing: border-box;
+  margin-left: 8.5rem;
+}
+
+.HSSectionOneHeader {
+  font-size: 3rem;
+  color: white;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  margin-top: 7.5rem;
+}
+
+.HSSectionOneParagraph {
+  font-size: 1.25rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  color: #d6fffe;
+  margin-bottom: 4rem;
+}
+
+.HealthScreeningsLandingImage {
+  margin-top: 15rem;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.HSSectionTwo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.HSSectionTwoHeader {
+  font-size: 1.75rem;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  margin: 7.5rem auto 3rem auto;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.HSSectionTwoContent {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  flex-direction: row;
+  gap: 5rem;
+  position: relative;
+  min-height: 18rem;
+  margin-top: 4rem;
+}
+
+.HSStressContentGroup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.HSStressContentFooters {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-size: 1rem;
+  height: auto;
+  margin-top: auto;
+  position: relative;
+  bottom: 0;
+}
+
+.DoctorIcon,
+.AppointmentBook,
+.HeartRate {
+  margin-bottom: 2.5rem;
+  height: 4.5rem;
+  object-fit: contain;
+}
+
+.HSSectionThree {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 75rem;
+  margin: 4rem auto;
+  gap: 5rem;
+}
+
+.HSSectionThreeHeader {
+  font-size: 1.9rem;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  margin-bottom: 3rem;
+  text-align: left;
+}
+
+.HSSectionThreeHeaderRight {
+  font-size: 1.9rem;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  margin-bottom: 3rem;
+  text-align: left;
+  margin-left: 2.5rem;
+}
+
+.HSSectionThreeParagraph {
+  font-size: 1.125rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  margin-top: 3rem;
+  text-align: left;
+}
+
+.HSSectionThreeLeft {
+  flex: 1;
+  max-width: 50%;
+}
+
+.HSSectionThreeRight {
+  flex: 1;
+  max-width: 50%;
+}
+
+.HSSectionFourHeader {
+  font-size: 2.5rem;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  text-align: left;
+}
+
+.HSSectionFourSubHeader {
+  font-size: 1.25rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  margin-top: 3rem;
+  text-align: left;
+}
+
+.HSSectionFourContentHeader {
+  font-size: 1.125rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.HSSectionFour {
+  display: flex;
+  flex-direction: column;
+  min-width: 75rem;
+}
+
+.HSSectionFourContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.HSSectionFourList {
+  list-style-type: none;
+  padding-left: 0;
+  width: 100%;
+}
+
+.HSSectionFourList li {
+  position: relative;
+  margin-bottom: 1.75rem;
+  padding-left: 2rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.HSSectionFourList li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.4rem;
+  background-color: #408f6f;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 0.1rem;
+  transform: translateY(-10%);
+}
+
+.HSSectionFourListItem {
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+  position: relative;
+  margin-left: 2rem;
+}
+
+.Cervix {
+  margin-right: 5rem;
+}
+
+.HSSectionFiveHeader {
+  font-size: 2rem;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  text-align: left;
+  margin-top: 5rem;
+}
+
+.HSSectionFiveSubHeader {
+  font-size: 1.25rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  text-align: left;
+}
+
+.HSSectionFiveContentHeader {
+  font-size: 1.5rem;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.HSSectionFive {
+  display: flex;
+  flex-direction: column;
+  min-width: 75rem;
+}
+
+.HSSectionFiveContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.HSSectionFiveLeft {
+  flex: 1;
+}
+
+.HSSectionFiveRight {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  margin-top: 3rem;
+}
+
+.HSSectionFiveList {
+  list-style-type: none;
+  padding-left: 0;
+  width: 100%;
+}
+
+.HSSectionFiveList li {
+  position: relative;
+  margin-bottom: 2.5rem;
+  padding-left: 2rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.HSSectionFiveList li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.4rem;
+  background-color: #408f6f;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 0.1rem;
+  transform: translateY(-10%);
+}
+
+.HSSectionFiveListItem {
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+  position: relative;
+  margin-left: 2rem;
+}
+
+.MythVsReality {
+  margin-right: 5rem;
+}
+
+.HSSectionSix {
+  display: flex;
+  flex-direction: column;
+  min-width: 75rem;
+}
+
+.HSSectionSixHeader {
+  font-size: 1.5rem;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.HSSectionSixSubHeader {
+  font-size: 1.25rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  text-align: left;
+}
+
+.HSSectionSixParagraph {
+  font-size: 1.25rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  text-align: left;
+}

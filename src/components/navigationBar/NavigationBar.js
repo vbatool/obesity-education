@@ -76,6 +76,13 @@ function NavigationBar() {
                   >
                     Challenges of Weight Loss
                   </Link>
+
+                  <Link
+                    to={"/health-topics/health-screenings"}
+                    className="DropdownMenuItem"
+                  >
+                    Health Screenings
+                  </Link>
                 </div>
               )}
             </li>
