@@ -46,21 +46,21 @@ function ChallengesOfWeightLoss() {
           and increase their <br></br>
           physical activity. Initially, weight loss occurs as the body burns
           more calories than it <br></br>consumes.
-          <br></br>
-          <br></br>
+          <br className="SectionBreak"></br>
+          <br className="SectionBreak"></br>
           However, this triggers body’s mechanisms to protect it from the
           possible danger of <br></br> starvation. As a response, hormonal
           changes occur, such as increased hunger hormones <br></br> (ghrelin)
           and decreased fullness hormones (leptin). The metabolism also slows
           down to <br></br> conserve energy.
-          <br></br>
-          <br></br>
+          <br className="SectionBreak"></br>
+          <br className="SectionBreak"></br>
           Despite continued efforts, the weight loss slows or stops. This
           happens because the body <br></br> adjusts its energy expenditure and
           metabolism to resist further weight loss, aiming to <br></br>return to
           its "set point."
-          <br></br>
-          <br></br>
+          <br className="SectionBreak"></br>
+          <br className="SectionBreak"></br>
           Eventually the person might regain some of the lost weight or return
           to the original weight. <br></br> There are several reasons
           responsible for this such as:

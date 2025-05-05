@@ -42,14 +42,21 @@
 }
 
 .COWLLandingImage {
-  margin-top: 18.5rem;
+  max-width: 21vw;
+  height: auto;
+  position: absolute;
+  right: 6rem;
+  bottom: 0;
 }
 
 .COWLSectionTwo {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 5rem;
 }
 
@@ -57,6 +64,7 @@
   font-size: 1.25rem;
   font-family: "Roboto", sans-serif;
   font-weight: 200;
+  align-self: center;
 }
 
 .COWLSectionTwoHeader {
@@ -64,14 +72,15 @@
   color: #004240;
   font-family: "Playfair Display", serif;
   font-weight: 400;
-  align-self: flex-start;
-  margin-left: 29.2rem;
+  align-self: center;
+  margin-left: 0;
 }
 
 .COWLSectionTwoList {
   list-style-type: none;
   padding-left: 0;
   margin-left: 3rem;
+  align-self: center;
 }
 
 .COWLSectionTwoList li {
@@ -105,21 +114,24 @@
   font-weight: 200;
   font-size: 1.25rem;
   color: #004240;
+  align-self: center;
 }
 
 .COWLVideo {
-  max-width: 66rem;
-  max-height: 32rem;
+  max-width: 70vw;
+  max-height: 35vw;
   border: 0.1rem solid;
   margin-bottom: 3rem;
+  align-self: center;
 }
 
 .Advice {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  width: 66rem;
-  margin-left: 18rem;
+  max-width: 66rem;
+  width: 100%;
+  align-self: center;
 }
 
 .AdviceNumberBox {
@@ -127,6 +139,7 @@
   height: 2.5rem;
   min-height: 2.5rem;
   min-width: 2.5rem;
+  flex-shrink: 0;
   background-color: #006650;
   color: white;
   font-family: "Roboto", sans-serif;
@@ -155,4 +168,58 @@
   width: 100%;
   align-items: center;
   margin-bottom: 5rem;
+  align-self: center;
+}
+
+.DiscussionQuestionsImage {
+  max-width: 80%;
+  align-self: center;
+}
+@media screen and (max-width: 1250px) {
+  .COWLLandingImage {
+    display: none;
+  }
+
+  .COWLSectionOne {
+    flex-direction: column;
+    max-height: none;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  .COWLSectionTwo,
+  .AdviceContainer {
+    width: 90%;
+  }
+
+  .COWLSectionOneLeft {
+    margin-top: 5rem;
+    width: 85%;
+    box-sizing: border-box;
+    margin-bottom: 5rem;
+    margin-left: 0rem;
+    text-align: center;
+  }
+
+  .COWLSectionOneParagraph br,
+  .COWLSectionTwoParagraph br,
+  .AdviceParagraph br {
+    display: none;
+  }
+
+  .Advice {
+    width: 100%;
+    padding: 0 1rem;
+    box-sizing: border-box;
+  }
+
+  .AdviceParagraph {
+    font-size: 1rem;
+  }
+
+  .DiscussionQuestionsImage {
+    max-width: 95%;
+  }
 }

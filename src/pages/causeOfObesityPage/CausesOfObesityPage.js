@@ -340,7 +340,7 @@ function CausesOfObesity() {
                   deal with possible <br></br> physical danger, cortisol alters
                   how the body processes <br></br> energy and can lead to
                   cravings for energy-dense sweet, <br></br>fatty, and salty
-                  foods as shown in the figure on the right
+                  foods as shown in the figure on the right.
                   <br className="SectionBreak"></br>
                   <br className="SectionBreak"></br>
                   <br className="SectionBreak"></br>
@@ -352,7 +352,7 @@ function CausesOfObesity() {
                   Tiredness due to limited sleep limits the amount of <br></br>{" "}
                   physical activity throughout the day -  increasing the{" "}
                   <br></br>
-                  likelihood of weight gain
+                  likelihood of weight gain.
                 </p>
               </div>
               <div className="StressSectionOneRight">
