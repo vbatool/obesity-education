@@ -1,0 +1,198 @@
+.MentalHealthAndWeight {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+}
+
+.MHAWSectionOne {
+  background-color: #004240;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  max-height: 47vw;
+  overflow: hidden;
+}
+
+.MHAWSectionOneHeader {
+  font-size: 3rem;
+  color: white;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  margin-top: 15rem;
+}
+
+.MHAWSectionOneParagraph {
+  font-size: 1.25rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  color: #a8fffc;
+  margin-bottom: 8rem;
+  align-self: center;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.MHAWSectionTwo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 8rem auto 10rem;
+}
+
+.MHAWSectionTwoLeft {
+  width: 55%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-left: 5rem;
+}
+
+.MHAWSectionTwoRight {
+  width: 40%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.MHAWSSectionTwoHeader {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 2rem;
+  text-align: left;
+  align-self: flex-start;
+  margin-bottom: 4rem;
+}
+
+.MHAWSSectionTwoParagraph {
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  text-align: left;
+}
+
+.MHAWSectionThree {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 5rem auto 2rem;
+}
+
+.MHAWSectionThreeLeft {
+  width: 55%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-left: 5rem;
+}
+
+.MHAWSectionThreeRight {
+  width: 40%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.MHAWSSectionThreeHeader {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 2rem;
+  text-align: left;
+  align-self: flex-start;
+  margin-bottom: 4rem;
+}
+
+.MHAWSSectionThreeParagraph {
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  text-align: left;
+}
+
+.MHAWSectionFour {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto 10rem;
+}
+
+.MHAWSectionFourRight {
+  width: 55%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.MHAWSectionFourLeft {
+  width: 45%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding-right: 3rem; */
+}
+
+.MHAWSSectionFourParagraph {
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  text-align: left;
+}
+
+.EatingDisorderChart {
+  width: 35rem;
+  height: 35rem;
+}
+
+.MHAWSectionFive {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 5rem auto 10rem;
+}
+
+.MHAWSectionFiveLeft {
+  width: 55%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-left: 5rem;
+}
+
+.MHAWSectionFiveRight {
+  width: 40%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.MHAWSSectionFiveHeader {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 2rem;
+  text-align: left;
+  align-self: flex-start;
+  margin-bottom: 4rem;
+}
+
+.MHAWSSectionFiveParagraph {
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  text-align: left;
+}
