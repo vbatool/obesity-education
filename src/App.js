@@ -5,6 +5,7 @@ import HomePage from "./pages/homePage/HomePage";
 import CausesOfObesity from "./pages/causeOfObesityPage/CausesOfObesityPage";
 import ChallengesOfWeightLoss from "./pages/challengesOfWeightLoss/ChallengesOfWeightLoss";
 import HealthScreenings from "./pages/healthScreenings/HealthScreenings";
+import MentalHealthAndWeight from "./pages/mentalHealthAndWeight/MentalHealthAndWeight";
 
 function App() {
   return (
@@ -12,7 +13,10 @@ function App() {
       <NavigationBar />
 
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route
+          path="/dartmouth-health-obesity-education"
+          element={<HomePage />}
+        />
         <Route
           path="/health-topics/causes-of-obesity"
           element={<CausesOfObesity />}
@@ -25,6 +29,11 @@ function App() {
         <Route
           path="/health-topics/health-screenings"
           element={<HealthScreenings />}
+        />
+
+        <Route
+          path="/health-topics/mental-health-and-weight"
+          element={<MentalHealthAndWeight />}
         />
       </Routes>
     </Router>

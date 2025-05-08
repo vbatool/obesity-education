@@ -225,12 +225,18 @@ function HomePage() {
               Did you know that there could be a connection <br></br> between
               weight and how you are feeling?
             </p>
-            <div class="LearnMoreButton">
-              <div class="ArrowCircle" style={{ backgroundColor: "#E3FAFA" }}>
-                <span class="LearnMoreText">Learn more</span>
-                <i class="Arrow"></i>
+
+            <Link
+              to={"/health-topics/mental-health-and-weight"}
+              style={{ color: "inherit" }}
+            >
+              <div class="LearnMoreButton">
+                <div class="ArrowCircle" style={{ backgroundColor: "#E3FAFA" }}>
+                  <span class="LearnMoreText">Learn more</span>
+                  <i class="Arrow"></i>
+                </div>
               </div>
-            </div>
+            </Link>
           </div>
 
           <div className="HealthTopicBox">
@@ -275,12 +281,18 @@ function HomePage() {
               detection of health issues, promoting <br></br> overall well-being
               and proactive care.
             </p>
-            <div class="LearnMoreButton">
-              <div class="ArrowCircle" style={{ backgroundColor: "#FFE9DC" }}>
-                <span class="LearnMoreText">Learn more</span>
-                <i class="Arrow"></i>
+
+            <Link
+              to={"/health-topics/health-screenings"}
+              style={{ color: "inherit" }}
+            >
+              <div class="LearnMoreButton">
+                <div class="ArrowCircle" style={{ backgroundColor: "#FFE9DC" }}>
+                  <span class="LearnMoreText">Learn more</span>
+                  <i class="Arrow"></i>
+                </div>
               </div>
-            </div>
+            </Link>
           </div>
 
           <div className="HealthTopicBox">

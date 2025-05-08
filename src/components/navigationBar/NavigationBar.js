@@ -35,7 +35,10 @@ function NavigationBar() {
       <div className="NavigationBarContent">
         <div className="NavigationBarLeft">
           <div className="LogoContainer">
-            <Link to="/" className="NavigationBarLinkItem">
+            <Link
+              to="/dartmouth-health-obesity-education"
+              className="NavigationBarLinkItem"
+            >
               <img
                 className="DartmouthHealthLogo"
                 src={DartmouthHealthLogo}
@@ -82,6 +85,13 @@ function NavigationBar() {
                     className="DropdownMenuItem"
                   >
                     Health Screenings
+                  </Link>
+
+                  <Link
+                    to={"/health-topics/mental-health-and-weight"}
+                    className="DropdownMenuItem"
+                  >
+                    Mental Health And Weight
                   </Link>
                 </div>
               )}
