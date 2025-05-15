@@ -256,12 +256,18 @@ function HomePage() {
               approaches, addressing both physical <br></br> and mental aspects
               of obesity for long-term <br></br> success.
             </p>
-            <div class="LearnMoreButton">
-              <div class="ArrowCircle" style={{ backgroundColor: "#F8EAED" }}>
-                <span class="LearnMoreText">Learn more</span>
-                <i class="Arrow"></i>
+
+            <Link
+              to={"/health-topics/weight-loss-treatment"}
+              style={{ color: "inherit" }}
+            >
+              <div class="LearnMoreButton">
+                <div class="ArrowCircle" style={{ backgroundColor: "#F8EAED" }}>
+                  <span class="LearnMoreText">Learn more</span>
+                  <i class="Arrow"></i>
+                </div>
               </div>
-            </div>
+            </Link>
           </div>
 
           <div className="HealthTopicBox">

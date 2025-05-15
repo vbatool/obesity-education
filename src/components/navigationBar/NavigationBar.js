@@ -81,17 +81,23 @@ function NavigationBar() {
                   </Link>
 
                   <Link
+                    to={"/health-topics/mental-health-and-weight"}
+                    className="DropdownMenuItem"
+                  >
+                    Mental Health
+                  </Link>
+
+                  <Link
+                    to={"/health-topics/weight-loss-treatment"}
+                    className="DropdownMenuItem"
+                  >
+                    Treatment Options
+                  </Link>
+                  <Link
                     to={"/health-topics/health-screenings"}
                     className="DropdownMenuItem"
                   >
                     Health Screenings
-                  </Link>
-
-                  <Link
-                    to={"/health-topics/mental-health-and-weight"}
-                    className="DropdownMenuItem"
-                  >
-                    Mental Health And Weight
                   </Link>
                 </div>
               )}

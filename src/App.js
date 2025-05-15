@@ -6,6 +6,7 @@ import CausesOfObesity from "./pages/causeOfObesityPage/CausesOfObesityPage";
 import ChallengesOfWeightLoss from "./pages/challengesOfWeightLoss/ChallengesOfWeightLoss";
 import HealthScreenings from "./pages/healthScreenings/HealthScreenings";
 import MentalHealthAndWeight from "./pages/mentalHealthAndWeight/MentalHealthAndWeight";
+import WeightLossTreatment from "./pages/weightLossTreatment/WeightLossTreatment";
 
 function App() {
   return (
@@ -27,13 +28,18 @@ function App() {
         />
 
         <Route
-          path="/health-topics/health-screenings"
-          element={<HealthScreenings />}
+          path="/health-topics/mental-health-and-weight"
+          element={<MentalHealthAndWeight />}
         />
 
         <Route
-          path="/health-topics/mental-health-and-weight"
-          element={<MentalHealthAndWeight />}
+          path="/health-topics/weight-loss-treatment"
+          element={<WeightLossTreatment />}
+        />
+
+        <Route
+          path="/health-topics/health-screenings"
+          element={<HealthScreenings />}
         />
       </Routes>
     </Router>
