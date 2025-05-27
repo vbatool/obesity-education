@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./CausesOfObesityPage.css";
 import CausesOfObesityPageLandingImage from "../../images/CausesOfObesityPageImages/CausesOfObesityPageLandingImage.png";
 import CausesOfObesityPageBottomImage from "../../images/CausesOfObesityPageImages/CausesOfObesityPageBottomImage.png";
@@ -19,6 +19,31 @@ import LowEnergyPerson from "../../images/CausesOfObesityPageImages/LowEnegryPer
 
 function CausesOfObesity() {
   const [activeTab, setActiveTab] = useState("biological");
+  const [activeMobileTabIndex, setActiveMobileTabIndex] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 1250);
+    };
+
+    checkMobile();
+
+    window.addEventListener("resize", checkMobile);
+
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
+  const nextTab = () => {
+    setActiveMobileTabIndex((prev) => (prev + 1) % tabs.length);
+    setActiveTab(tabs[(activeMobileTabIndex + 1) % tabs.length].id);
+  };
+
+  const prevTab = () => {
+    const newIndex = (activeMobileTabIndex - 1 + tabs.length) % tabs.length;
+    setActiveMobileTabIndex(newIndex);
+    setActiveTab(tabs[newIndex].id);
+  };
 
   const tabs = [
     { id: "biological", label: "Biological" },
@@ -34,12 +59,12 @@ function CausesOfObesity() {
           <div className="COOPTabContent">
             <div className="BiologicalSectionOne">
               <div className="BiologicalSectionOneLeft">
-                <h2 className="COOPTabContentHeader">
+                <h1 className="COOPTabContentHeader">
                   <span style={{ color: "#408F6F", marginRight: "1rem" }}>
                     01.{" "}
                   </span>
                   Genetics and Weight
-                </h2>
+                </h1>
                 <p className="BiologicalSectionOneParagraph">
                   Scientific research on obesity finds a strong connection{" "}
                   <br></br>
@@ -104,12 +129,12 @@ function CausesOfObesity() {
 
             <div className="BiologicalSectionThree">
               <div className="BiologicalSectionThreeRight">
-                <h2 className="COOPTabContentHeader">
+                <h1 className="COOPTabContentHeader">
                   <span style={{ color: "#408F6F", marginRight: "1rem" }}>
                     02.{" "}
                   </span>
                   Other Health Conditions
-                </h2>
+                </h1>
                 <p className="BiologicalSectionThreeParagraph">
                   Weight gain might also be a result of certain health <br></br>
                   conditions. The thyroid gland is responsible for <br></br>
@@ -160,13 +185,13 @@ function CausesOfObesity() {
             <div className="NutritionSectionOne">
               <div className="NutritionSectionOneLeft">
                 {" "}
-                <h2 className="COOPTabContentHeader">
+                <h1 className="COOPTabContentHeader">
                   {" "}
                   <span style={{ color: "#408F6F", marginRight: "1rem" }}>
                     03.{" "}
                   </span>{" "}
                   Nutrition
-                </h2>
+                </h1>
                 <p className="NutritionSectionOneParagraph">
                   Regardless of the genes we inherit from our parents, the{" "}
                   <br></br>
@@ -248,13 +273,13 @@ function CausesOfObesity() {
           <div className="COOPTabContent">
             <div className="MedicinesSectionOne">
               <div className="MedicinesSectionOneLeft">
-                <h2 className="COOPTabContentHeader">
+                <h1 className="COOPTabContentHeader">
                   {" "}
                   <span style={{ color: "#408F6F", marginRight: "1rem" }}>
                     04.{" "}
                   </span>{" "}
                   Medicines
-                </h2>
+                </h1>
 
                 <p className="MedicinesSectionOneParagraph">
                   Individuals might experience weight gain as a side-effect{" "}
@@ -295,7 +320,6 @@ function CausesOfObesity() {
               </div>
             </div>
 
-            <div className="SectionDivider"></div>
             <div className="MedicinesSectionTwo">
               <img
                 className="MedicationsTableImage"
@@ -318,13 +342,13 @@ function CausesOfObesity() {
           <div className="COOPTabContent">
             <div className="StressSectionOne">
               <div className="StressSectionOneLeft">
-                <h2 className="COOPTabContentHeader">
+                <h1 className="COOPTabContentHeader">
                   {" "}
                   <span style={{ color: "#408F6F", marginRight: "1rem" }}>
                     05.{" "}
                   </span>{" "}
                   Stress and Sleep
-                </h2>
+                </h1>
 
                 <p className="StressSectionOneParagraph">
                   Stress can hurt more than just our mood- it can lead to weight
@@ -332,7 +356,7 @@ function CausesOfObesity() {
                   gain.
                   <br className="SectionBreak"></br>
                   <br className="SectionBreak"></br>
-                  <br className="SectionBreak"></br>
+                  <br></br>
                   When we are stressed our bodies release cortisol, the{" "}
                   <br></br> natural stress hormone. Think of cortisol like tiny
                   messages <br></br> in the blood stream released to prepare our
@@ -343,8 +367,8 @@ function CausesOfObesity() {
                   foods as shown in the figure on the right.
                   <br className="SectionBreak"></br>
                   <br className="SectionBreak"></br>
-                  <br className="SectionBreak"></br>
-                  <br className="SectionBreak"></br>
+                  <br></br>
+                  <br></br>
                   Additionally, research has found that stress impacts <br></br>
                   sleep quality which may also contribute to weight <br></br>{" "}
                   gain. Sleep deprivation has been linked to an <br></br>
@@ -381,7 +405,6 @@ function CausesOfObesity() {
                 </div>
               </div>
             </div>
-            <div className="SectionDivider"></div>
             <div className="StressSectionTwo">
               <h3 className="StressSectionTwoHeader">
                 Sleep impacts your overall health in the following ways:
@@ -433,16 +456,18 @@ function CausesOfObesity() {
       <div className="COOPSectionOne">
         <div className="COOPSectionOneLeft">
           <h1 className="COOPSectionOneHeader">
-            Obesity is a complex condition <br></br> caused by multiple factors
+            Obesity is a complex condition <br /> caused by multiple factors
           </h1>
-
           <p className="COOPSectionOneParagraph">
             Viewing obesity solely as a consequence of unhealthy lifestyle
-            choices <br></br>oversimplifies the issue. In reality, genetics, the
-            environment, and other <br></br>factors such as hormonal imbalances,
-            and psychological challenges interact <br></br>to contribute to
-            weight gain. Explore the various contributing factors to gain a{" "}
-            <br></br> deeper understanding of this complex condition.
+            choices <br />
+            oversimplifies the issue. In reality, genetics, the environment, and
+            other <br />
+            factors such as hormonal imbalances, and psychological challenges
+            interact <br />
+            to contribute to weight gain. Explore the various contributing
+            factors to gain a <br />
+            deeper understanding of this complex condition.
           </p>
         </div>
         <div className="COOPSectionOneRight">
@@ -450,13 +475,15 @@ function CausesOfObesity() {
             className="CausesOfObesityPageLandingImage"
             src={CausesOfObesityPageLandingImage}
             alt="Participant"
-          ></img>
+          />
         </div>
       </div>
+
       <div className="COOPSectionTwo">
         <h1 className="COOPSectionTwoHeader">
           All the different contributors need to be studied in order to form a{" "}
-          <br></br> complete picture of the causes of weight gain
+          <br />
+          complete picture of the causes of weight gain
         </h1>
 
         <div className="COOPTabNavigationBar">
@@ -476,14 +503,38 @@ function CausesOfObesity() {
             ))}
           </div>
 
-          <div className="COOPTabContentContainer">{renderTabContent()}</div>
+          <div className="COOPTabContentWrapper">
+            {isMobile && (
+              <>
+                <button className="arrow-button arrow-left" onClick={prevTab}>
+                  &#10094;
+                </button>
+                <button className="arrow-button arrow-right" onClick={nextTab}>
+                  &#10095;
+                </button>
+              </>
+            )}
+
+            {tabs.map((tab, index) => (
+              <div
+                key={tab.id}
+                className={`COOPTabContentContainer ${
+                  window.innerWidth > 1250 || index === activeMobileTabIndex
+                    ? "active"
+                    : ""
+                }`}
+              >
+                {activeTab === tab.id && renderTabContent()}
+              </div>
+            ))}
+          </div>
         </div>
 
         <img
           className="CausesOfObesityPageBottomImage"
           src={CausesOfObesityPageBottomImage}
           alt="Tips and Questions"
-        ></img>
+        />
       </div>
     </div>
   );

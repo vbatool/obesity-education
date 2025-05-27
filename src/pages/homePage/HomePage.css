@@ -50,6 +50,7 @@
 
 .SectionOneButton {
   font-family: "Roboto", sans-serif;
+  cursor: pointer;
   font-size: 1.25rem;
   color: white;
   padding: 1rem;
@@ -109,10 +110,6 @@
   font-family: "Roboto", sans-serif;
   color: #004240;
   font-weight: 250;
-}
-
-.MegaphoneImage {
-  margin-top: 10rem;
 }
 
 .SectionThree {
@@ -270,6 +267,22 @@
     max-height: none;
   }
 
+  .SectionOneHeader {
+    font-size: 2.5rem;
+  }
+
+  .SectionTwoHeader {
+    font-size: 1.75rem;
+  }
+
+  .SectionThreeHeader {
+    font-size: 2.5rem;
+  }
+
+  .SectionThreeSubHeader {
+    font-size: 1.125rem;
+  }
+
   .SectionOneRight {
     margin-top: 5rem;
     width: 85%;
@@ -304,7 +317,7 @@
   .MegaphoneImage {
     margin-top: 0rem;
     margin-bottom: 0rem;
-    min-width: none;
+    width: 25rem;
   }
 
   .Insight {
@@ -312,7 +325,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
     margin-right: 5rem;
     margin-left: 5rem;
   }
@@ -327,7 +340,11 @@
   }
 
   .SectionThreeSubHeader {
-    margin-bottom: 8rem;
+    margin-bottom: 4rem;
+  }
+
+  .HealthTopics {
+    gap: 1.5rem;
   }
 }
 

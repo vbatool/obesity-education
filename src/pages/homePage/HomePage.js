@@ -26,7 +26,13 @@ function HomePage() {
             decisions about seeking healthcare options that meet your <br></br>
             unique needs.
           </p>
-          <button className="SectionOneButton">Learn More</button>
+
+          <Link
+            to={"/health-topics/causes-of-obesity"}
+            style={{ color: "inherit" }}
+          >
+            <button className="SectionOneButton">Learn More</button>
+          </Link>
         </div>
         <div className="SectionOneLeft">
           <img
