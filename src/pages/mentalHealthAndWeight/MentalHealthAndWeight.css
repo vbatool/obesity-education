@@ -196,3 +196,85 @@
   font-weight: 200;
   text-align: left;
 }
+
+@media screen and (max-width: 1250px) {
+  .MHAWSectionOne {
+    flex-direction: column;
+    max-height: none;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  .MHAWSectionOneParagraph {
+    width: 90%;
+  }
+
+  .MHAWSectionOneHeader {
+    font-size: 2.5rem;
+  }
+
+  .MHAWSectionOneParagraph br,
+  .MHAWSSectionTwoParagraph br,
+  .MHAWSSectionThreeParagraph br,
+  .MHAWSSectionFourParagraph br,
+  .MHAWSSectionFiveParagraph br {
+    display: none;
+  }
+
+  .CrowdedThoughts,
+  .PlateWithWords,
+  .PersonStrugglingMentally {
+    display: none;
+  }
+
+  .MHAWSectionTwo,
+  .MHAWSectionThree,
+  .MHAWSectionFour,
+  .MHAWSectionFive {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    text-align: center;
+  }
+
+  .MHAWSectionTwoLeft,
+  .MHAWSectionTwoRight,
+  .MHAWSectionThreeLeft,
+  .MHAWSectionThreeRight,
+  .MHAWSectionFourLeft,
+  .MHAWSectionFourRight,
+  .MHAWSectionFiveLeft,
+  .MHAWSectionFiveRight {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+  }
+
+  .MHAWSSectionTwoHeader,
+  .MHAWSSectionTwoParagraph,
+  .MHAWSSectionThreeHeader,
+  .MHAWSSectionThreeParagraph,
+  .MHAWSSectionFourParagraph,
+  .MHAWSSectionFiveHeader,
+  .MHAWSSectionFiveParagraph {
+    text-align: center;
+    align-self: center;
+  }
+
+  .MHAWSectionTwo,
+  .MHAWSectionFour,
+  .MHAWSectionFive {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+  }
+
+  .MHAWSSectionTwoHeader,
+  .MHAWSSectionThreeHeader,
+  .EatingDisorderChart {
+    margin-bottom: 2rem;
+  }
+}
