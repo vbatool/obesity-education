@@ -190,7 +190,7 @@ function HealthScreenings() {
             </div>
           </div>
 
-          <div className="HSSectionSixContent">
+          <div className="HSSectionSix">
             <div className="HSSectionSixHeader">When to get Screened</div>
             <div className="HSSectionSixSubHeader">
               Talk to your health care provider about when to start screening
