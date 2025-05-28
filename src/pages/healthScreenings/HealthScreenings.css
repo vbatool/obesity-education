@@ -364,7 +364,16 @@
 
   .HSSectionOne {
     max-height: none;
-    padding: 5rem;
+    padding: 5rem 0;
+    width: 100%;
+    max-width: 90%;
+    justify-content: center;
+    max-width: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
   }
 
   .HSSectionTwo {
@@ -377,7 +386,6 @@
     margin-top: 0;
   }
 
-  .HSSectionOneLeft,
   .HSSectionThreeLeft,
   .HSSectionThreeRight,
   .HSSectionFourLeft,
@@ -393,9 +401,14 @@
   }
 
   .HSSectionOneLeft {
-    margin: 2rem auto;
+    width: 100%;
+    max-width: 90%;
     text-align: center;
-    box-sizing: border-box;
+    margin-left: 0;
+  }
+
+  .HSSectionOneRight {
+    display: none;
   }
 
   .HSSectionThreeLeft {
@@ -457,12 +470,8 @@
 
   .HSSectionOneHeader {
     font-size: 2.5rem;
-    margin: 0 auto 2rem auto;
   }
 
-  .HSSectionOneParagraph {
-    margin: 0 auto 2rem auto;
-  }
   .HSSectionSixParagraph {
     line-height: 1.5;
   }

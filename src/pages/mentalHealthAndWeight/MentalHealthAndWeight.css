@@ -272,6 +272,10 @@
     margin-bottom: 2rem;
   }
 
+  .EatingDisorderChart {
+    width: 95%;
+  }
+  
   .MHAWSSectionTwoHeader,
   .MHAWSSectionThreeHeader,
   .EatingDisorderChart {
