@@ -16,6 +16,11 @@ function NavigationBar() {
     setDropdownOpen(!dropdownOpen);
   };
 
+  const closeMenu = () => {
+    setmenuOpen(false);
+    setDropdownOpen(false);
+  };
+
   useEffect(() => {
     const checkWindowWidth = () => {
       if (window.innerWidth > 1250) {
@@ -38,6 +43,7 @@ function NavigationBar() {
             <Link
               to="/dartmouth-health-obesity-education"
               className="NavigationBarLinkItem"
+              onClick={closeMenu}
             >
               <img
                 className="DartmouthHealthLogo"
@@ -70,12 +76,14 @@ function NavigationBar() {
                   <Link
                     to={"/health-topics/causes-of-obesity"}
                     className="DropdownMenuItem"
+                    onClick={closeMenu}
                   >
                     Causes of Obesity
                   </Link>
                   <Link
                     to={"/health-topics/challenges-of-weight-loss"}
                     className="DropdownMenuItem"
+                    onClick={closeMenu}
                   >
                     Challenges of Weight Loss
                   </Link>
@@ -83,6 +91,7 @@ function NavigationBar() {
                   <Link
                     to={"/health-topics/mental-health-and-weight"}
                     className="DropdownMenuItem"
+                    onClick={closeMenu}
                   >
                     Mental Health
                   </Link>
@@ -90,12 +99,14 @@ function NavigationBar() {
                   <Link
                     to={"/health-topics/weight-loss-treatment"}
                     className="DropdownMenuItem"
+                    onClick={closeMenu}
                   >
                     Treatment Options
                   </Link>
                   <Link
                     to={"/health-topics/health-screenings"}
                     className="DropdownMenuItem"
+                    onClick={closeMenu}
                   >
                     Health Screenings
                   </Link>
@@ -103,13 +114,19 @@ function NavigationBar() {
               )}
             </li>
             <li>
-              <Link className="NavigationBarLinkItem">Patient Stories</Link>
+              <Link className="NavigationBarLinkItem" onClick={closeMenu}>
+                Patient Stories
+              </Link>
             </li>
             <li>
-              <Link className="NavigationBarLinkItem">Resources</Link>
+              <Link className="NavigationBarLinkItem" onClick={closeMenu}>
+                Resources
+              </Link>
             </li>
             <li>
-              <Link className="NavigationBarLinkItem">About</Link>
+              <Link className="NavigationBarLinkItem" onClick={closeMenu}>
+                About
+              </Link>
             </li>
           </ul>
         </div>
