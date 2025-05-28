@@ -7,10 +7,12 @@ import ChallengesOfWeightLoss from "./pages/challengesOfWeightLoss/ChallengesOfW
 import HealthScreenings from "./pages/healthScreenings/HealthScreenings";
 import MentalHealthAndWeight from "./pages/mentalHealthAndWeight/MentalHealthAndWeight";
 import WeightLossTreatment from "./pages/weightLossTreatment/WeightLossTreatment";
+import TopScroll from "./components/TopScroll";
 
 function App() {
   return (
     <Router>
+      <TopScroll />
       <NavigationBar />
 
       <Routes>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./NavigationBar.css";
 import DartmouthHealthLogo from "../../images/NavigationBarImages/DartmouthHealthLogo.png";
 
@@ -32,6 +32,26 @@ function NavigationBar() {
 
     return () => {
       window.removeEventListener("resize", checkWindowWidth);
+    };
+  }, []);
+
+  const location = useLocation();
+
+  useEffect(() => {
+    setmenuOpen(false);
+    setDropdownOpen(false);
+  }, [location]);
+
+  useEffect(() => {
+    const handleCloseNavBar = () => {
+      setmenuOpen(false);
+      setDropdownOpen(false);
+    };
+
+    window.addEventListener("closeNavBar", handleCloseNavBar);
+
+    return () => {
+      window.removeEventListener("closeNavBar", handleCloseNavBar);
     };
   }, []);
 

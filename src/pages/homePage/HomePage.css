@@ -138,6 +138,24 @@
 
 .HealthTopics {
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.HealthTopicsRowOne {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.HealthTopicsRowTwo {
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
@@ -343,8 +361,10 @@
     margin-bottom: 4rem;
   }
 
-  .HealthTopics {
+  .HealthTopicsRowOne,
+  .HealthTopicsRowTwo {
     gap: 1.5rem;
+    margin-bottom: 1.5rem;
   }
 }
 

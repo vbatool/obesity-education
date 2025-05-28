@@ -11,6 +11,12 @@ import HealthScreeningsImage from "../../images/HomePageImages/HealthScreeningsI
 import PatientNarrativesImage from "../../images/HomePageImages/PatientNarrativesImage.png";
 
 function HomePage() {
+
+  const closeNavBar = () => {
+    console.log("closeNavBar event sent");
+    window.dispatchEvent(new CustomEvent('closeNavBar'));
+  };
+
   return (
     <div className="HomePage">
       <div className="SectionOne">
@@ -30,6 +36,7 @@ function HomePage() {
           <Link
             to={"/health-topics/causes-of-obesity"}
             style={{ color: "inherit" }}
+            onClick={closeNavBar}
           >
             <button className="SectionOneButton">Learn More</button>
           </Link>
@@ -156,179 +163,203 @@ function HomePage() {
         </h2>
 
         <div className="HealthTopics">
-          <div className="HealthTopicBox">
-            <div
-              className="HealthTopicImageBox"
-              style={{ backgroundColor: "#e4f7f3" }}
-            >
-              <img
-                className="HealthTopicImage"
-                src={CauseOfObesityImage}
-                alt="Magnifying Glass"
-              ></img>
+          <div className="HealthTopicsRowOne">
+            <div className="HealthTopicBox">
+              <div
+                className="HealthTopicImageBox"
+                style={{ backgroundColor: "#e4f7f3" }}
+              >
+                <img
+                  className="HealthTopicImage"
+                  src={CauseOfObesityImage}
+                  alt="Magnifying Glass"
+                ></img>
+              </div>
+              <h1 className="HealthTopicHeader">Causes of Obesity</h1>
+              <p className="HealthTopicParagraph">
+                Obesity may be caused by many factors, <br></br> including
+                genetics, environment, diet, <br></br> stress and medications,
+                among others.
+              </p>
+              <Link
+                to={"/health-topics/causes-of-obesity"}
+                style={{ color: "inherit" }}
+                onClick={closeNavBar}
+              >
+                <div class="LearnMoreButton">
+                  <div
+                    class="ArrowCircle"
+                    style={{ backgroundColor: "#e4f7f3" }}
+                  >
+                    <span class="LearnMoreText">Learn more</span>
+                    <i class="Arrow"></i>
+                  </div>
+                </div>
+              </Link>
             </div>
-            <h1 className="HealthTopicHeader">Causes of Obesity</h1>
-            <p className="HealthTopicParagraph">
-              Obesity may be caused by many factors, <br></br> including
-              genetics, environment, diet, <br></br> stress and medications,
-              among others.
-            </p>
-            <Link
-              to={"/health-topics/causes-of-obesity"}
-              style={{ color: "inherit" }}
-            >
+
+            <div className="HealthTopicBox">
+              <div
+                className="HealthTopicImageBox"
+                style={{ backgroundColor: "#E5EEFA" }}
+              >
+                <img
+                  className="HealthTopicImage"
+                  src={WeightLossChallengesImage}
+                  alt="Scale"
+                ></img>
+              </div>
+              <h1 className="HealthTopicHeader">Weight Loss Challenges</h1>
+              <p className="HealthTopicParagraph">
+                Our bodies resist weight loss as a protection <br></br>
+                mechanism, requiring long-term lifestyle <br></br> adjustments.
+              </p>
+              <Link
+                to={"/health-topics/challenges-of-weight-loss"}
+                style={{ color: "inherit" }}
+                onClick={closeNavBar}
+              >
+                <div class="LearnMoreButton">
+                  <div
+                    class="ArrowCircle"
+                    style={{ backgroundColor: "#E5EEFA" }}
+                  >
+                    <span class="LearnMoreText">Learn more</span>
+                    <i class="Arrow"></i>
+                  </div>
+                </div>
+              </Link>
+            </div>
+
+            <div className="HealthTopicBox">
+              <div
+                className="HealthTopicImageBox"
+                style={{ backgroundColor: "#E3FAFA" }}
+              >
+                <img
+                  className="HealthTopicImage"
+                  src={MentalHealthAndWeightImage}
+                  alt="Two heads"
+                ></img>
+              </div>
+              <h1 className="HealthTopicHeader">Mental Health and Weight</h1>
+              <p className="HealthTopicParagraph">
+                Did you know that there could be a connection <br></br> between
+                weight and how you are feeling?
+              </p>
+
+              <Link
+                to={"/health-topics/mental-health-and-weight"}
+                style={{ color: "inherit" }}
+                onClick={closeNavBar}
+              >
+                <div class="LearnMoreButton">
+                  <div
+                    class="ArrowCircle"
+                    style={{ backgroundColor: "#E3FAFA" }}
+                  >
+                    <span class="LearnMoreText">Learn more</span>
+                    <i class="Arrow"></i>
+                  </div>
+                </div>
+              </Link>
+            </div>
+          </div>
+
+          <div className="HealthTopicsRowTwo">
+            <div className="HealthTopicBox">
+              <div
+                className="HealthTopicImageBox"
+                style={{ backgroundColor: "#F8EAED" }}
+              >
+                <img
+                  className="HealthTopicImage"
+                  src={WeightLossTreatmentImage}
+                  alt="First Aid Logo Over Hand"
+                ></img>
+              </div>
+              <h1 className="HealthTopicHeader">Weight Loss Treatment</h1>
+              <p className="HealthTopicParagraph">
+                Effective weight loss treatments often combine <br></br>{" "}
+                multiple approaches, addressing both physical <br></br> and
+                mental aspects of obesity for long-term <br></br> success.
+              </p>
+
+              <Link
+                to={"/health-topics/weight-loss-treatment"}
+                style={{ color: "inherit" }}
+                onClick={closeNavBar}
+              >
+                <div class="LearnMoreButton">
+                  <div
+                    class="ArrowCircle"
+                    style={{ backgroundColor: "#F8EAED" }}
+                  >
+                    <span class="LearnMoreText">Learn more</span>
+                    <i class="Arrow"></i>
+                  </div>
+                </div>
+              </Link>
+            </div>
+
+            <div className="HealthTopicBox">
+              <div
+                className="HealthTopicImageBox"
+                style={{ backgroundColor: "#FFE9DC" }}
+              >
+                <img
+                  className="HealthTopicImage"
+                  src={HealthScreeningsImage}
+                  alt="Clipboard"
+                ></img>
+              </div>
+              <h1 className="HealthTopicHeader">Health Screenings</h1>
+              <p className="HealthTopicParagraph">
+                Regular health screenings are important for <br></br>early
+                detection of health issues, promoting <br></br> overall
+                well-being and proactive care.
+              </p>
+
+              <Link
+                to={"/health-topics/health-screenings"}
+                style={{ color: "inherit" }}
+                onClick={closeNavBar}
+              >
+                <div class="LearnMoreButton">
+                  <div
+                    class="ArrowCircle"
+                    style={{ backgroundColor: "#FFE9DC" }}
+                  >
+                    <span class="LearnMoreText">Learn more</span>
+                    <i class="Arrow"></i>
+                  </div>
+                </div>
+              </Link>
+            </div>
+
+            <div className="HealthTopicBox">
+              <div
+                className="HealthTopicImageBox"
+                style={{ backgroundColor: "#EEEAFD" }}
+              >
+                <img
+                  className="HealthTopicImage"
+                  src={PatientNarrativesImage}
+                  alt="Patients"
+                ></img>
+              </div>
+              <h1 className="HealthTopicHeader">Patient Narratives</h1>
+              <p className="HealthTopicParagraph">
+                Many individuals find support and <br></br> encouragement from
+                experiences of others who <br></br> are going through something
+                similar or have <br></br> overcome similar health challenges in
+                the past.
+              </p>
               <div class="LearnMoreButton">
-                <div class="ArrowCircle" style={{ backgroundColor: "#e4f7f3" }}>
+                <div class="ArrowCircle" style={{ backgroundColor: "#EEEAFD" }}>
                   <span class="LearnMoreText">Learn more</span>
                   <i class="Arrow"></i>
                 </div>
-              </div>
-            </Link>
-          </div>
-
-          <div className="HealthTopicBox">
-            <div
-              className="HealthTopicImageBox"
-              style={{ backgroundColor: "#E5EEFA" }}
-            >
-              <img
-                className="HealthTopicImage"
-                src={WeightLossChallengesImage}
-                alt="Scale"
-              ></img>
-            </div>
-            <h1 className="HealthTopicHeader">Weight Loss Challenges</h1>
-            <p className="HealthTopicParagraph">
-              Our bodies resist weight loss as a protection <br></br>mechanism,
-              requiring long-term lifestyle <br></br> adjustments.
-            </p>
-            <Link
-              to={"/health-topics/challenges-of-weight-loss"}
-              style={{ color: "inherit" }}
-            >
-              <div class="LearnMoreButton">
-                <div class="ArrowCircle" style={{ backgroundColor: "#E5EEFA" }}>
-                  <span class="LearnMoreText">Learn more</span>
-                  <i class="Arrow"></i>
-                </div>
-              </div>
-            </Link>
-          </div>
-
-          <div className="HealthTopicBox">
-            <div
-              className="HealthTopicImageBox"
-              style={{ backgroundColor: "#E3FAFA" }}
-            >
-              <img
-                className="HealthTopicImage"
-                src={MentalHealthAndWeightImage}
-                alt="Two heads"
-              ></img>
-            </div>
-            <h1 className="HealthTopicHeader">Mental Health and Weight</h1>
-            <p className="HealthTopicParagraph">
-              Did you know that there could be a connection <br></br> between
-              weight and how you are feeling?
-            </p>
-
-            <Link
-              to={"/health-topics/mental-health-and-weight"}
-              style={{ color: "inherit" }}
-            >
-              <div class="LearnMoreButton">
-                <div class="ArrowCircle" style={{ backgroundColor: "#E3FAFA" }}>
-                  <span class="LearnMoreText">Learn more</span>
-                  <i class="Arrow"></i>
-                </div>
-              </div>
-            </Link>
-          </div>
-
-          <div className="HealthTopicBox">
-            <div
-              className="HealthTopicImageBox"
-              style={{ backgroundColor: "#F8EAED" }}
-            >
-              <img
-                className="HealthTopicImage"
-                src={WeightLossTreatmentImage}
-                alt="First Aid Logo Over Hand"
-              ></img>
-            </div>
-            <h1 className="HealthTopicHeader">Weight Loss Treatment</h1>
-            <p className="HealthTopicParagraph">
-              Effective weight loss treatments often combine <br></br> multiple
-              approaches, addressing both physical <br></br> and mental aspects
-              of obesity for long-term <br></br> success.
-            </p>
-
-            <Link
-              to={"/health-topics/weight-loss-treatment"}
-              style={{ color: "inherit" }}
-            >
-              <div class="LearnMoreButton">
-                <div class="ArrowCircle" style={{ backgroundColor: "#F8EAED" }}>
-                  <span class="LearnMoreText">Learn more</span>
-                  <i class="Arrow"></i>
-                </div>
-              </div>
-            </Link>
-          </div>
-
-          <div className="HealthTopicBox">
-            <div
-              className="HealthTopicImageBox"
-              style={{ backgroundColor: "#FFE9DC" }}
-            >
-              <img
-                className="HealthTopicImage"
-                src={HealthScreeningsImage}
-                alt="Clipboard"
-              ></img>
-            </div>
-            <h1 className="HealthTopicHeader">Health Screenings</h1>
-            <p className="HealthTopicParagraph">
-              Regular health screenings are important for <br></br>early
-              detection of health issues, promoting <br></br> overall well-being
-              and proactive care.
-            </p>
-
-            <Link
-              to={"/health-topics/health-screenings"}
-              style={{ color: "inherit" }}
-            >
-              <div class="LearnMoreButton">
-                <div class="ArrowCircle" style={{ backgroundColor: "#FFE9DC" }}>
-                  <span class="LearnMoreText">Learn more</span>
-                  <i class="Arrow"></i>
-                </div>
-              </div>
-            </Link>
-          </div>
-
-          <div className="HealthTopicBox">
-            <div
-              className="HealthTopicImageBox"
-              style={{ backgroundColor: "#EEEAFD" }}
-            >
-              <img
-                className="HealthTopicImage"
-                src={PatientNarrativesImage}
-                alt="Patients"
-              ></img>
-            </div>
-            <h1 className="HealthTopicHeader">Patient Narratives</h1>
-            <p className="HealthTopicParagraph">
-              Many individuals find support and <br></br> encouragement from
-              experiences of others who <br></br> are going through something
-              similar or have <br></br> overcome similar health challenges in
-              the past.
-            </p>
-            <div class="LearnMoreButton">
-              <div class="ArrowCircle" style={{ backgroundColor: "#EEEAFD" }}>
-                <span class="LearnMoreText">Learn more</span>
-                <i class="Arrow"></i>
               </div>
             </div>
           </div>
