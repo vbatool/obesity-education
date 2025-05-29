@@ -173,9 +173,10 @@
 }
 
 .LifestyleSectionOneHeader {
+  margin-top: 2rem;
   font-size: 3rem;
   font-family: "Playfair Display", serif;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .LifestyleSectionOneHeaderParagraph {
@@ -347,7 +348,7 @@
 .WeightSectionOneHeader {
   font-size: 3rem;
   font-family: "Playfair Display", serif;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .WeightSectionOneParagraph {
@@ -411,6 +412,7 @@
 }
 
 .BariatricSectionOneHeader {
+  margin-top: 2rem;
   font-size: 3rem;
   font-family: "Playfair Display", serif;
   font-weight: 600;
