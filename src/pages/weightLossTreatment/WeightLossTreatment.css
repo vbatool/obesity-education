@@ -12,6 +12,7 @@
   width: 100%;
   position: relative;
   height: 45vw;
+  overflow: hidden;
 }
 
 .WLTSectionOneHeader {
@@ -54,7 +55,7 @@
 .WLTTabNavigationBar {
   width: 100%;
   max-width: 72rem;
-  margin: 5rem auto;
+  margin: 0 auto;
 }
 
 .WLTTabContainer {
@@ -96,18 +97,17 @@
   flex: 1;
 }
 
-.WLTTabContentContainer {
-  padding: 5rem 2rem;
-}
-
 .WLTTabContent {
   width: 100%;
+  position: relative;
 }
 
 .WLTTabContentHeader {
   font-family: "Playfair Display", serif;
   font-weight: 400;
   font-size: 2.5rem;
+  margin-top: 0 !important;
+  margin-bottom: 2rem;
 }
 
 .WLTSectionThree {
@@ -623,4 +623,211 @@
 .RedBell {
   height: 3rem;
   width: 3rem;
+}
+
+@media screen and (max-width: 1250px) {
+  .WLTSectionOneHeader {
+    font-size: 2.5rem;
+  }
+
+  .WLTSectionOneParagraph {
+    margin-bottom: 0rem;
+  }
+
+  .WeightLossTreatmentLandingImage,
+  .WLTSectionOneParagraph br,
+  .WLTSectionThreeListItem br,
+  .LifestyleSectionOneHeaderParagraph br,
+  .LifestyleSectionTwoParagraph br,
+  .LifestyleSectionListItem br,
+  .LifestyleSectionFourParagraph br,
+  .LifestyleSectionFiveParagraph br,
+  .LifestyleSectionDivider,
+  .WeightSectionOneParagraph br,
+  .WeightSectionTwoParagraph br,
+  .BariatricSectionOneParagraph br,
+  .RiskParagraph br,
+  .BariatricSectionOneParagraph br {
+    display: none;
+  }
+
+  .WLTSectionOne {
+    flex-direction: column;
+    max-height: none;
+    height: auto;
+  }
+
+  .WLTSectionOneLeft {
+    width: 90%;
+    box-sizing: border-box;
+    margin-left: 0rem;
+    text-align: center;
+  }
+
+  .WLTSectionTwoHeader {
+    font-size: 1.75rem;
+    padding: 0rem 2rem;
+  }
+
+  .WLTTabContentHeader {
+    font-size: 2rem;
+  }
+
+  .WLTTabContentWrapper {
+    position: relative;
+    width: 100%;
+    padding: 0 1.5rem;
+    box-sizing: border-box;
+    overflow: visible;
+  }
+
+  .WLTTabContentContainer.active {
+    display: block !important;
+  }
+
+  .WLTTabContainer {
+    justify-content: center;
+  }
+
+  .WLTTabButton {
+    display: none;
+  }
+
+  .WLTTabButton.active {
+    display: block;
+  }
+
+  .WLTSectionThreeHeader {
+    font-size: 1.75rem;
+    width: 90%;
+    margin-top: 5rem;
+  }
+
+  .WLTSectionThree {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 0rem;
+    margin-left: 0rem;
+    text-align: center;
+  }
+
+  .WLTSectionThreeList,
+  .LifestyleSectionList,
+  .BariatricSectionTwoList {
+    width: 90%;
+    max-width: 90%;
+    padding-left: 0;
+    text-align: center;
+    align-self: center;
+    margin: 0 auto;
+  }
+
+  .WLTSectionThreeList li,
+  .LifestyleSectionList li,
+  .BariatricSectionTwoList li {
+    text-align: left;
+    display: block;
+    width: 100%;
+    margin-left: 0;
+    box-sizing: border-box;
+  }
+
+  .WLTSectionThreeListItem,
+  .LifestyleSectionListItem,
+  .BariatricSectionTwoListItem {
+    padding-right: 1rem;
+    box-sizing: border-box;
+    margin-left: 0;
+  }
+
+  .LifestyleSectionOneHeader,
+  .WeightSectionOneHeader,
+  .BariatricSectionOneHeader {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+  }
+
+  .LifestyleAdviceCircle {
+    width: 100%;
+  }
+
+  .LifestyleSectionTwo,
+  .LifestyleSectionFour,
+  .LifestyleSectionFive,
+  .LifestyleSectionFiveContent,
+  .WeightSectionOne,
+  .WeightSectionTwo,
+  .BariatricSectionOne,
+  .BariatricSectionTwo,
+  .BariatricSectionTwoContentContainer,
+  .BariatricSectionTwoContentAlt {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  .LifestyleSectionThreeHeader {
+    text-align: center;
+  }
+
+  .FoodCheatSheet,
+  .SurgeryCare {
+    width: 95%;
+  }
+
+  .BPDDS {
+    margin-top: 1rem;
+    width: 100%;
+  }
+
+  .LifestyleSectionFour {
+    margin-top: 0rem;
+  }
+
+  .ExerciseBenefits {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .LifestyleSectionFourParagraph {
+    margin-top: 2rem;
+  }
+
+  .LifestyleSectionFiveContentRight {
+    margin-bottom: 2rem;
+    margin-right: 0;
+  }
+
+  .WeightSectionOneParagraph.PhotoHeader,
+  .WeightLossMechanisms,
+  .WeightLossSectionFooterContainer {
+    display: none;
+  }
+  .WeightLossMedications {
+    width: 100%;
+    margin-top: -5rem;
+    margin-bottom: -3rem;
+  }
+
+  .BariatricSectionTwoContent {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .BariatricSectionTwoContentLeft {
+    width: 90%;
+  }
+
+  .BariatricSectionTwoContentRight {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .BariatricSectionDivider {
+    width: 100%;
+  }
 }

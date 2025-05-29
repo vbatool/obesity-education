@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./WeightLossTreatment.css";
 import WeightLossTreatmentLandingImage from "../../images/weightLossTreatmentImages/WeightLossTreatmentLandingImage.png";
 import LifestyleAdviceCircle from "../../images/weightLossTreatmentImages/LifestyleAdviceCircle.png";
@@ -16,6 +16,31 @@ import RedBell from "../../images/weightLossTreatmentImages/RedBell.png";
 
 function WeightLossTreatment() {
   const [activeTab, setActiveTab] = useState("lifestyle");
+  const [activeMobileTabIndex, setActiveMobileTabIndex] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 1250);
+    };
+
+    checkMobile();
+
+    window.addEventListener("resize", checkMobile);
+
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
+  const nextTab = () => {
+    setActiveMobileTabIndex((prev) => (prev + 1) % tabs.length);
+    setActiveTab(tabs[(activeMobileTabIndex + 1) % tabs.length].id);
+  };
+
+  const prevTab = () => {
+    const newIndex = (activeMobileTabIndex - 1 + tabs.length) % tabs.length;
+    setActiveMobileTabIndex(newIndex);
+    setActiveTab(tabs[newIndex].id);
+  };
 
   const tabs = [
     { id: "lifestyle", label: "Lifestyle Modifications" },
@@ -70,7 +95,8 @@ function WeightLossTreatment() {
                   the right to see what <br></br> macronutrients are the most
                   important to be mindful of when you are <br></br>trying to eat
                   in a calorie deficit. <br></br>
-                  <br></br>
+                  <br className="SectionBreak"></br>
+                  <br className="SectionBreak"></br>
                   The following are some of the ways you could try to get
                   started with <br></br> monitoring your nutrition:
                 </div>
@@ -158,8 +184,8 @@ function WeightLossTreatment() {
                   <br></br> lean muscle mass while you lose weight.
                   Additionally, being <br></br> more active gives you more
                   energy and elevates your mood.
-                  <br></br>
-                  <br></br>
+                  <br className="SectionBreak"></br>
+                  <br className="SectionBreak"></br>
                   Here are some tips to get started:
                 </div>
 
@@ -212,7 +238,8 @@ function WeightLossTreatment() {
                 <br></br>feel and can increase your cravings for high-calorie
                 foods. Thus, a regular sleep schedule should be <br></br>{" "}
                 prioritized. <br></br>
-                <br></br>
+                <br className="SectionBreak"></br>
+                <br className="SectionBreak"></br>
                 You can try the following tips based on your schedule to improve
                 sleep hygiene. Feel free to adjust them as <br></br> per your
                 needs:
@@ -270,7 +297,7 @@ function WeightLossTreatment() {
                 important to understand how they work to reap their full
                 benefits.{" "}
               </p>
-              <p className="WeightSectionOneParagraph">
+              <p className="WeightSectionOneParagraph PhotoHeader">
                 Weight-loss medicines follow one of the following mechanisms:
               </p>
               <img
@@ -332,12 +359,13 @@ function WeightLossTreatment() {
                 to rapid weight regain. These medications should be combined
                 with nutrition and increased physical <br></br>movement to
                 increase the chance of long-term weight loss success and
-                optimize your health overall. <br></br> <br></br>If you are
-                living with both type II diabetes and obesity, some medications
-                commonly used for type II diabetes may <br></br> also help with
-                weight loss. Consider discussing your options with your
-                healthcare provider to optimize how <br></br> the medications
-                you take could work in your favor for weight loss.
+                optimize your health overall. <br className="SectionBreak"></br>{" "}
+                <br className="SectionBreak"></br>If you are living with both
+                type II diabetes and obesity, some medications commonly used for
+                type II diabetes may <br></br> also help with weight loss.
+                Consider discussing your options with your healthcare provider
+                to optimize how <br></br> the medications you take could work in
+                your favor for weight loss.
               </p>
             </div>
           </div>
@@ -353,15 +381,15 @@ function WeightLossTreatment() {
                 treatment option for more advanced-stage obesity, such as BMI
                 greater than 35. Some <br></br> procedures limit how much you
                 can eat, while others limit the absorption of fat and calories.{" "}
-                <br></br>
-                <br></br>
+                <br className="SectionBreak"></br>
+                <br className="SectionBreak"></br>
                 It may also be opted for to treat other conditions that may
                 exist alongside obesity. It is important to <br></br>discuss
                 this option with your provider as it might not work for
                 everyone, and there are risks associated <br></br> with
                 bariatric surgery that one needs to be mindful of.
-                <br></br>
-                <br></br>
+                <br className="SectionBreak"></br>
+                <br className="SectionBreak"></br>
                 The surgery requires long-term follow-up care and lifestyle
                 modifications which include diet, exercise, and <br></br>{" "}
                 behavioral changes to ensure that the weight loss persists for
@@ -668,7 +696,31 @@ function WeightLossTreatment() {
             ))}
           </div>
 
-          <div className="WLTTabContentContainer">{renderTabContent()}</div>
+          <div className="WLTTabContentWrapper">
+            {isMobile && (
+              <>
+                <button className="arrow-button arrow-left" onClick={prevTab}>
+                  &#10094;
+                </button>
+                <button className="arrow-button arrow-right" onClick={nextTab}>
+                  &#10095;
+                </button>
+              </>
+            )}
+
+            {tabs.map((tab, index) => (
+              <div
+                key={tab.id}
+                className={`WLTTabContentContainer ${
+                  window.innerWidth > 1250 || index === activeMobileTabIndex
+                    ? "active"
+                    : ""
+                }`}
+              >
+                {activeTab === tab.id && renderTabContent()}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 
