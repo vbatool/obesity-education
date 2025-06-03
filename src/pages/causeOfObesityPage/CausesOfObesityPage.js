@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./CausesOfObesityPage.css";
 import CausesOfObesityPageLandingImage from "../../images/CausesOfObesityPageImages/CausesOfObesityPageLandingImage.png";
-import CausesOfObesityPageBottomImage from "../../images/CausesOfObesityPageImages/CausesOfObesityPageBottomImage.png";
 import DNAImage from "../../images/CausesOfObesityPageImages/DNAImage.png";
 import DNAWithNumbersImage from "../../images/CausesOfObesityPageImages/DNAWithNumbersImage.png";
 import HeartImage from "../../images/CausesOfObesityPageImages/HeartImage.png";
@@ -416,6 +415,7 @@ function CausesOfObesity() {
                     src={ScaleImage}
                     alt="Balance Scale"
                   ></img>
+
                   <p className="StressContentFooters">
                     Disturbs the balance between hunger <br></br> and fullness
                     hormones; leading to <br></br> bigger appetite
@@ -529,12 +529,41 @@ function CausesOfObesity() {
             ))}
           </div>
         </div>
+      </div>
 
-        <img
-          className="CausesOfObesityPageBottomImage"
-          src={CausesOfObesityPageBottomImage}
-          alt="Tips and Questions"
-        />
+      <div className="COOPSectionThree">
+        <div className="COOPSectionThreeHeader">
+          Tips and questions for your next appointment
+        </div>
+
+        <ul className="COOPSectionThreeList">
+          <li className="COOPSectionThreeListItem">
+            Discuss any other health conditions you may have that may be a
+            contributing factor to weight gain.
+          </li>
+
+          <li className="COOPSectionThreeListItem">
+            Are there any tests and evaluations that can help me better
+            understand the impact of my health conditions on my weight?
+          </li>
+
+          <li className="COOPSectionThreeListItem">
+            Discuss any medications you may be taking and if they have a side
+            effect of weight gain. You can ask them for alternative medications
+            that have fewer side effects related to weight.
+          </li>
+
+          <li className="COOPSectionThreeListItem">
+            Track your environment: Keep a diary of your daily routines,
+            including meals, physical activity, and other environmental factors
+            e.g sleep.
+          </li>
+
+          <li className="COOPSectionThreeListItem">
+            Identify triggers in your environment and other factors that you
+            think might lead to an imbalance in eating or restricted movement.
+          </li>
+        </ul>
       </div>
     </div>
   );

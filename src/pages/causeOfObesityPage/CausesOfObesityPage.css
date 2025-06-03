@@ -122,6 +122,61 @@
   margin-bottom: 2rem;
 }
 
+.COOPSectionThree {
+  background-color: #004240;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 45vw;
+}
+
+.COOPSectionThreeHeader {
+  font-size: 3rem;
+  color: white;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  margin-top: 7.5rem;
+  margin-bottom: 2rem;
+}
+
+.COOPSectionThreeList {
+  list-style-type: none;
+  padding-left: 0;
+  width: 80%;
+  max-width: 72rem;
+}
+
+.COOPSectionThreeList li {
+  position: relative;
+  margin-bottom: 3rem;
+  padding-left: 2.5rem;
+  display: flex;
+  align-items: center;
+  margin-left: 8rem;
+}
+
+.COOPSectionThreeList li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.25rem;
+  background-color: #adffed;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0.1rem;
+  transform: translateY(-10%);
+}
+
+.COOPSectionThreeListItem {
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-size: 1.125rem;
+  color: white;
+  position: relative;
+  margin-left: 2rem;
+}
+
 .BiologicalSectionOne {
   display: flex;
   justify-content: space-between;
@@ -454,10 +509,6 @@
   bottom: 0;
 }
 
-.CausesOfObesityPageBottomImage {
-  margin-top: 5rem;
-}
-
 @media screen and (max-width: 1385px) {
   .COOPSectionOneHeader {
     margin-right: 3rem;
@@ -478,15 +529,22 @@
   .COOPSectionOneHeader {
     margin-right: 0rem;
     font-size: 2.5rem;
+    margin-top: 0;
   }
 
   .COOPSectionTwoHeader {
     font-size: 1.75rem;
     padding: 0rem 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 
-  .COOPTabContentHeader {
-    font-size: 2rem;
+  .COOPTabContentHeader,
+  .BiologicalSectionTwoHeader,
+  .NutritionSectionThreeHeader,
+  .NutritionSectionFourHeader,
+  .COOPSectionThreeHeader {
+    font-size: 1.75rem;
   }
 
   .COOPTabContentWrapper {
@@ -533,8 +591,8 @@
     display: block;
   }
 
-  .BiologicalSectionTwoHeader {
-    font-size: 1.75rem;
+  .COOPTabContent {
+    padding-top: 2rem;
   }
 
   .BiologicalSectionDivider {
@@ -547,12 +605,15 @@
   }
 
   .COOPSectionOneParagraph {
-    margin-bottom: 4rem;
+    margin-bottom: 0rem;
   }
 
   .COOPSectionOne {
+    height: 125vw;
     flex-direction: column;
     max-height: none;
+    align-items: center;
+    justify-content: center;
   }
 
   .COOPSectionOneLeft {
@@ -609,6 +670,7 @@
   .StressSectionOne {
     margin-bottom: 2rem;
   }
+
   .NutritionSectionThree {
     margin-top: -2rem;
   }
@@ -664,6 +726,26 @@
     margin-top: 2.5rem;
   }
 
+  .BiologicalSectionOneParagraph,
+  .BiologicalSectionSubHeader,
+  .BiologicalSectionLink,
+  .BiologicalSectionTwoRightParagraph,
+  .BiologicalSectionThreeParagraph,
+  .NutritionSectionOneParagraph,
+  .NutritionSectionTwoParagraph,
+  .NutritionSectionThreeParagraph,
+  .MedicinesSectionOneParagraph,
+  .MedcineSectionOneListItem,
+  .MedicinesSectionTwoParagraph,
+  .StressSectionOneParagraph,
+  .ImageFooter,
+  .StressContentFooters {
+    font-size: 1rem;
+  }
+
+  .StressSectionTwoHeader {
+    font-weight: 400;
+  }
   .SectionBreak {
     display: block !important;
   }
@@ -686,13 +768,62 @@
   }
   .NutritionTableTwoImage,
   .ProcessedFoodGuideImage,
-  .CausesOfObesityPageBottomImage,
   .DNAWithNumbersImage,
   .MedicationsTableImage {
     max-width: 95vw;
   }
 
-  .CausesOfObesityPageBottomImage {
-    margin-top: 0rem;
+  .COOPSectionThreeHeader {
+    font-size: 1.75rem;
+    width: 90%;
+    margin-top: 5rem;
+  }
+
+  .COOPSectionThree {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 0rem;
+    margin-left: 0rem;
+    text-align: center;
+  }
+
+  .COOPSectionThreeList {
+    width: 90%;
+    max-width: 90%;
+    padding-left: 0;
+    text-align: center;
+    align-self: center;
+    margin: 0 auto;
+  }
+
+  .COOPSectionThreeList li {
+    text-align: left;
+    display: block;
+    width: 100%;
+    margin-left: 0;
+    box-sizing: border-box;
+  }
+
+  .COOPSectionThreeListItem {
+    padding-right: 1rem;
+    box-sizing: border-box;
+    margin-left: 0;
+    font-size: 1rem;
+  }
+
+  .BrainImage,
+  .CortisolImage,
+  .ThinkingImage {
+    width: 40vw;
+    margin-top: 2rem;
+  }
+
+  .DigestiveAndBrainImage {
+    width: 80vw;
+    margin-top: 2rem;
+  }
+
+  .ScaleImage {
+    width: 50vw;
   }
 }

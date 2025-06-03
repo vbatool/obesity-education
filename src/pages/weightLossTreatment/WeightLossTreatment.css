@@ -832,4 +832,14 @@
   .BariatricSectionDivider {
     width: 100%;
   }
+
+  .LifestyleSectionOneHeader,
+  .WeightSectionOneHeader,
+  .BariatricSectionOneHeader {
+    display: none;
+  }
+
+  .MacronutrientsTable {
+    width: 100%;
+  }
 }

@@ -2,7 +2,6 @@ import React from "react";
 import "./ChallengesOfWeightLoss.css";
 import COWLLandingImage from "../../images/ChallengesOfWeightLossImages/COWLLandingImage.png";
 import SetPointTheory from "../../images/ChallengesOfWeightLossImages/SetPointTheory.mp4";
-import DiscussionQuestionsImage from "../../images/ChallengesOfWeightLossImages/DiscussionQuestionsImage.png";
 
 function ChallengesOfWeightLoss() {
   return (
@@ -81,7 +80,7 @@ function ChallengesOfWeightLoss() {
 
         <h3 className="COWLSectionTwoVideoHeader">Set Point Theory</h3>
 
-        <video className="COWLVideo" autoPlay loop muted>
+        <video className="COWLVideo">
           <source src={SetPointTheory} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
@@ -116,12 +115,39 @@ function ChallengesOfWeightLoss() {
             </p>
           </div>
         </div>
+      </div>
 
-        <img
-          className="DiscussionQuestionsImage"
-          src={DiscussionQuestionsImage}
-          alt="Discussion Questions"
-        ></img>
+      <div className="COWLSectionThree">
+        <div className="COWLSectionThreeHeader">
+          Possible discussion questions for your next appointment
+        </div>
+
+        <ul className="COWLSectionThreeList">
+          <li className="COWLSectionThreeListItem">
+            What lifestyle changes can support sustainable weight loss despite
+            these challenge brought by set point and metabolic adaptations?
+          </li>
+
+          <li className="COWLSectionThreeListItem">
+            How long might it take to see changes if my body is resisting weight
+            loss due to a set point?
+          </li>
+
+          <li className="COWLSectionThreeListItem">
+            What is realistic weight loss expectation to have given the changing
+            set point and metabolic adaptation of the body?
+          </li>
+
+          <li className="COWLSectionThreeListItem">
+            If you have any conditions e.g eating disorders, discuss how that
+            factors into imbalance between hunger and fullness hormones.
+          </li>
+
+          <li className="COWLSectionThreeListItem">
+            How can I balance calorie restriction with maintaining energy levels
+            and overall health?
+          </li>
+        </ul>
       </div>
     </div>
   );
