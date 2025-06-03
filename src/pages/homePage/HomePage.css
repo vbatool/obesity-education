@@ -277,15 +277,20 @@
 
 @media screen and (max-width: 1250px) {
   .SectionOneParagraph {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
+    font-size: 1.25rem;
   }
 
   .SectionOne {
+    height: 125vw;
     flex-direction: column;
     max-height: none;
+    align-items: center;
+    justify-content: center;
   }
 
   .SectionOneHeader {
+    margin-top: 0;
     font-size: 2.5rem;
   }
 
