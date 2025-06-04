@@ -876,7 +876,8 @@
 
   .BrainImage,
   .CortisolImage,
-  .ThinkingImage {
+  .ThinkingImage,
+  .LowEnergyPerson {
     width: 40vw;
     margin-top: 2rem;
   }
