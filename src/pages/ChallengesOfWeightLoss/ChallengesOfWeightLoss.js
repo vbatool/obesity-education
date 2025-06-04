@@ -80,7 +80,7 @@ function ChallengesOfWeightLoss() {
 
         <h3 className="COWLSectionTwoVideoHeader">Set Point Theory</h3>
 
-        <video className="COWLVideo">
+        <video className="COWLVideo autoplay">
           <source src={SetPointTheory} type="video/mp4" />
           Your browser does not support the video tag.
         </video>

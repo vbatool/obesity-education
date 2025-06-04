@@ -282,7 +282,7 @@
   }
 
   .SectionOne {
-    height: 125vw;
+    height: 150vw;
     flex-direction: column;
     max-height: none;
     align-items: center;
