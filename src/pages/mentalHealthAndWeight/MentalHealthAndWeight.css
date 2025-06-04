@@ -205,10 +205,12 @@
     justify-content: center;
     width: 100%;
     text-align: center;
+    height: 175vw;
   }
 
   .MHAWSectionOneParagraph {
     width: 90%;
+    font-size: 1rem;
   }
 
   .MHAWSectionOneHeader {
@@ -273,9 +275,23 @@
   }
 
   .EatingDisorderChart {
-    width: 95%;
+    width: 100vw;
+    height: auto;
   }
-  
+
+  .MHAWSSectionTwoHeader,
+  .MHAWSSectionThreeHeader,
+  .MHAWSSectionFiveHeader {
+    font-size: 1.75rem;
+  }
+
+  .MHAWSSectionTwoParagraph,
+  .MHAWSSectionThreeParagraph,
+  .MHAWSSectionFourParagraph,
+  .MHAWSSectionFiveParagraph {
+    font-size: 1rem;
+  }
+
   .MHAWSSectionTwoHeader,
   .MHAWSSectionThreeHeader,
   .EatingDisorderChart {
