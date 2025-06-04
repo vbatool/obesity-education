@@ -15,6 +15,16 @@ import DigestiveAndBrainImage from "../../images/CausesOfObesityPageImages/Diges
 import ScaleImage from "../../images/CausesOfObesityPageImages/ScaleImage.png";
 import ThinkingImage from "../../images/CausesOfObesityPageImages/ThinkingImage.png";
 import LowEnergyPerson from "../../images/CausesOfObesityPageImages/LowEnegryPerson.png";
+import GranolaImage from "../../images/CausesOfObesityPageImages/GranolaImage.png";
+import TrailMixImage from "../../images/CausesOfObesityPageImages/TrailMixImage.png";
+import SmoothieImage from "../../images/CausesOfObesityPageImages/SmoothieImage.png";
+import YogurtImage from "../../images/CausesOfObesityPageImages/YogurtImage.png";
+import ProteinImage from "../../images/CausesOfObesityPageImages/ProteinImage.png";
+import JuiceImage from "../../images/CausesOfObesityPageImages/JuiceImage.png";
+import ProcessedFoodGuideOne from "../../images/CausesOfObesityPageImages/ProcessedFoodGuideOne.png";
+import ProcessedFoodGuideTwo from "../../images/CausesOfObesityPageImages/ProcessedFoodGuideTwo.png";
+import ProcessedFoodGuideThree from "../../images/CausesOfObesityPageImages/ProcessedFoodGuideThree.png";
+import ProcessedFoodGuideFour from "../../images/CausesOfObesityPageImages/ProcessedFoodGuideFour.png";
 
 function CausesOfObesity() {
   const [activeTab, setActiveTab] = useState("biological");
@@ -243,6 +253,42 @@ function CausesOfObesity() {
                 alt="Nutrition Table"
               ></img>
 
+              <img
+                className="NutritionTableTwoIndividual Granola"
+                src={GranolaImage}
+                alt="Granola Bar"
+              ></img>
+
+              <img
+                className="NutritionTableTwoIndividual TrailMix"
+                src={TrailMixImage}
+                alt="Trail Mix"
+              ></img>
+
+              <img
+                className="NutritionTableTwoIndividual Smoothie"
+                src={SmoothieImage}
+                alt="Smoothie"
+              ></img>
+
+              <img
+                className="NutritionTableTwoIndividual Yogurt"
+                src={YogurtImage}
+                alt="Yogurt"
+              ></img>
+
+              <img
+                className="NutritionTableTwoIndividual Protein"
+                src={ProteinImage}
+                alt="Protein Bar"
+              ></img>
+
+              <img
+                className="NutritionTableTwoIndividual Juice"
+                src={JuiceImage}
+                alt="Juice"
+              ></img>
+
               <p className="NutritionSectionThreeParagraph">
                 Another common way to understand whether something is nutritious
                 or not is to see how processed it is. <br></br> NOVA system a
@@ -262,6 +308,30 @@ function CausesOfObesity() {
               <img
                 className="ProcessedFoodGuideImage"
                 src={ProcessedFoodGuideImage}
+                alt="Processed Food Guide"
+              ></img>
+
+              <img
+                className="ProcessedFoodGuideOne"
+                src={ProcessedFoodGuideOne}
+                alt="Processed Food Guide"
+              ></img>
+
+              <img
+                className="ProcessedFoodGuideTwo"
+                src={ProcessedFoodGuideTwo}
+                alt="Processed Food Guide"
+              ></img>
+
+              <img
+                className="ProcessedFoodGuideThree"
+                src={ProcessedFoodGuideThree}
+                alt="Processed Food Guide"
+              ></img>
+
+              <img
+                className="ProcessedFoodGuideFour"
+                src={ProcessedFoodGuideFour}
                 alt="Processed Food Guide"
               ></img>
             </div>

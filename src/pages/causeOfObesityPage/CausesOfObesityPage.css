@@ -323,6 +323,10 @@
   flex-direction: column;
 }
 
+.NutritionTableTwoIndividual {
+  display: none;
+}
+
 .NutritionSectionThreeHeader {
   font-size: 2rem;
   font-family: "Playfair Display", serif;
@@ -356,6 +360,12 @@
   margin-top: 2rem;
 }
 
+.ProcessedFoodGuideOne,
+.ProcessedFoodGuideTwo,
+.ProcessedFoodGuideThree,
+.ProcessedFoodGuideFour {
+  display: none;
+}
 .MedicinesSectionOne {
   display: flex;
   justify-content: space-between;
@@ -609,7 +619,7 @@
   }
 
   .COOPSectionOne {
-    height: 125vw;
+    height: 175vw;
     flex-direction: column;
     max-height: none;
     align-items: center;
@@ -675,6 +685,52 @@
     margin-top: -2rem;
   }
 
+  .NutritionTableTwoImage,
+  .ProcessedFoodGuideImage {
+    display: none;
+  }
+
+  .NutritionTableTwoIndividual {
+    display: block;
+    align-self: center;
+    margin-top: 1rem;
+  }
+
+  .NutritionTableTwoIndividual.Granola {
+    width: 90vw;
+  }
+
+  .NutritionTableTwoIndividual.TrailMix {
+    width: 90vw;
+  }
+
+  .NutritionTableTwoIndividual.Smoothie {
+    width: 91vw;
+  }
+
+  .NutritionTableTwoIndividual.Yogurt {
+    width: 89vw;
+    margin-left: 0.25rem;
+  }
+
+  .NutritionTableTwoIndividual.Protein {
+    width: 92vw;
+    margin-right: 1rem;
+  }
+
+  .NutritionTableTwoIndividual.Juice {
+    width: 90vw;
+    margin-right: 0.5rem;
+  }
+
+  .ProcessedFoodGuideOne,
+  .ProcessedFoodGuideTwo,
+  .ProcessedFoodGuideThree,
+  .ProcessedFoodGuideFour {
+    display: block;
+    width: 90vw;
+    margin-bottom: 1rem;
+  }
   .StressSectionTwoContent {
     flex-direction: column;
     align-items: center;
@@ -726,6 +782,13 @@
     margin-top: 2.5rem;
   }
 
+  .BiologicalSectionThreeLeft,
+  .BiologicalSectionThreeRight,
+  .BiologicalSectionThreeParagraph {
+    margin-right: 0rem;
+    margin-left: 0rem;
+  }
+
   .BiologicalSectionOneParagraph,
   .BiologicalSectionSubHeader,
   .BiologicalSectionLink,
@@ -766,7 +829,7 @@
     margin-top: 2.5rem;
     margin-bottom: 1rem;
   }
-  .NutritionTableTwoImage,
+
   .ProcessedFoodGuideImage,
   .DNAWithNumbersImage,
   .MedicationsTableImage {
