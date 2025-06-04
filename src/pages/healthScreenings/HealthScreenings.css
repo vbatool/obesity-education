@@ -374,6 +374,7 @@
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
+    height: 175vw;
   }
 
   .HSSectionTwo {
@@ -472,6 +473,29 @@
     font-size: 2.5rem;
   }
 
+  .HSSectionOneParagraph,
+  .HSSectionThreeParagraph,
+  .HSSectionFourSubHeader,
+  .HSSectionFourContentHeader,
+  .HSSectionFourListItem,
+  .HSSectionFiveSubHeader,
+  .HSSectionFiveListItem,
+  .HSSectionSixSubHeader,
+  .HSSectionSixParagraph {
+    font-size: 1rem;
+  }
+
+  .HSSectionTwoHeader,
+  .HSSectionThreeHeader,
+  .HSSectionThreeHeaderRight,
+  .HSSectionFourHeader,
+  .HSSectionFiveHeader {
+    font-size: 1.75rem;
+  }
+
+  .HSSectionTwoHeader {
+    margin-top: -1rem;
+  }
   .HSSectionSixParagraph {
     line-height: 1.5;
   }
@@ -481,17 +505,26 @@
   }
 
   .ScreeningsChecklist,
-  .VisitsTimeline,
-  .Cervix,
   .MythVsReality,
   .DoctorIcon,
   .AppointmentBook,
-  .HeartRate {
+  .HeartRate,
+  .Cervix {
     display: block;
     margin: 1rem auto;
     max-width: 100%;
     height: auto;
     align-self: center;
+  }
+  .VisitsTimeline {
+    width: 110vw;
+    height: auto;
+    display: block;
+    height: auto;
+    align-self: center;
+  }
+  .Cervix {
+    width: 80vw;
   }
   .HSSectionFourList,
   .HSSectionFiveList {

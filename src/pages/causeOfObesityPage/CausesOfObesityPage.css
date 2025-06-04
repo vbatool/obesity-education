@@ -573,7 +573,7 @@
     position: absolute;
     margin-top: -3rem;
     transform: translateY(-50%);
-    z-index: 10;
+    z-index: 1;
     color: #408f6f;
   }
 

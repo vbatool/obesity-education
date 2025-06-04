@@ -267,13 +267,16 @@
     align-self: center;
   }
 
-  .MHAWSectionTwo,
   .MHAWSectionFour,
   .MHAWSectionFive {
     margin-top: 5rem;
     margin-bottom: 2rem;
   }
 
+  .MHAWSectionTwo {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
   .EatingDisorderChart {
     width: 100vw;
     height: auto;

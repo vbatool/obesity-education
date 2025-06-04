@@ -254,6 +254,11 @@
   .COWLSectionTwoHeader {
     font-size: 1.75rem;
   }
+
+  .COWLSectionTwo {
+    margin-top: 2rem;
+  }
+
   .COWLSectionTwoParagraph,
   .COWLSectionTwoListItem,
   .COWLSectionOneParagraph,
