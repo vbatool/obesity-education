@@ -268,6 +268,11 @@
   width: 80%;
 }
 
+.CheatSheetOne,
+.CheatSheetTwo {
+  display: none;
+}
+
 .LifestyleSectionFour {
   display: flex;
   justify-content: space-between;
@@ -388,6 +393,12 @@
   align-items: center;
   gap: 5rem;
   margin-bottom: 5rem;
+}
+
+.MechanismOne,
+.MechanismTwo,
+.MechanismThree {
+  display: none;
 }
 
 .WeightSectionTwo {
@@ -649,14 +660,73 @@
   .WeightSectionTwoParagraph br,
   .BariatricSectionOneParagraph br,
   .RiskParagraph br,
-  .BariatricSectionOneParagraph br {
+  .BariatricSectionOneParagraph br,
+  .BariatricSectionTwoListItem {
     display: none;
   }
 
   .WLTSectionOne {
+    height: 175vw;
     flex-direction: column;
     max-height: none;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .WeightSectionOneParagraph,
+  .LifestyleSectionOneHeaderParagraph,
+  .BariatricSectionOneParagraph {
+    margin-top: 2rem;
+  }
+
+  .WeightSectionOneParagraph {
+    margin-bottom: 0rem;
+  }
+
+  .WLTSectionOneParagraph,
+  .LifestyleSectionOneHeaderParagraph,
+  .LifestyleSectionTwoParagraph,
+  .LifestyleSectionListItem,
+  .LifestyleSectionFourSubtext,
+  .LifestyleSectionFourParagraph,
+  .LifestyleSectionFiveParagraph,
+  .WLTSectionThreeListItem,
+  .WeightSectionOneParagraph,
+  .WeightSectionTwoParagraph,
+  .WeightLossFooter,
+  .BariatricSectionOneParagraph,
+  .RiskParagraph,
+  .BariatricSectionTwoParagraph,
+  .BariatricSectionTwoContentHeader,
+  .BariatricSectionTwoListHeader,
+  .BariatricSectionTwoListItem,
+  .BariatricSectionTwoListParagraph,
+  .BariatricSectionThreeParagraph {
+    font-size: 1rem;
+  }
+
+  .LifestyleSectionTwoHeader,
+  .LifestyleSectionThreeHeader,
+  .LifestyleSectionFourHeader,
+  .LifestyleSectionFiveHeader,
+  .WLTSectionThreeHeader,
+  .BariatricSectionOneHeaderTwo,
+  .BariatricSectionTwoHeader {
+    font-size: 1.75rem;
+  }
+
+  .BariatricSectionOneHeaderTwo {
+    margin-top: 0;
+  }
+  .LifestyleSectionThreeHeader {
+    width: 90%;
+  }
+
+  .MacronutrientsTable {
     height: auto;
+    width: 100vw;
+    align-self: center;
+    margin-left: 1rem;
   }
 
   .WLTSectionOneLeft {
@@ -697,6 +767,7 @@
 
   .WLTTabButton.active {
     display: block;
+    font-size: 1.4rem;
   }
 
   .WLTSectionThreeHeader {
@@ -774,11 +845,20 @@
     text-align: center;
   }
 
-  .FoodCheatSheet,
   .SurgeryCare {
     width: 95%;
   }
+  .FoodCheatSheet {
+    display: none;
+  }
 
+  .CheatSheetOne,
+  .CheatSheetTwo,
+  .ManagementSchedule {
+    display: block;
+    width: 95%;
+    margin-bottom: 1rem;
+  }
   .BPDDS {
     margin-top: 1rem;
     width: 100%;
@@ -802,14 +882,25 @@
     margin-right: 0;
   }
 
-  .WeightSectionOneParagraph.PhotoHeader,
-  .WeightLossMechanisms,
   .WeightLossSectionFooterContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .MechanismOne,
+  .MechanismTwo,
+  .MechanismThree {
+    display: block;
+  }
+
+  .WeightLossMechanisms {
     display: none;
   }
   .WeightLossMedications {
-    width: 100%;
-    margin-top: -5rem;
+    width: 105vw;
+    margin-top: -3rem;
     margin-bottom: -3rem;
   }
 
@@ -837,9 +928,5 @@
   .WeightSectionOneHeader,
   .BariatricSectionOneHeader {
     display: none;
-  }
-
-  .MacronutrientsTable {
-    width: 100%;
   }
 }

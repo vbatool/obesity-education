@@ -13,6 +13,11 @@ import SleeveGastrectomy from "../../images/weightLossTreatmentImages/SleeveGast
 import GastricBypass from "../../images/weightLossTreatmentImages/GastricBypass.png";
 import BPDDS from "../../images/weightLossTreatmentImages/BPD_DS.png";
 import RedBell from "../../images/weightLossTreatmentImages/RedBell.png";
+import CheatSheetOne from "../../images/weightLossTreatmentImages/CheatSheetOne.png";
+import CheatSheetTwo from "../../images/weightLossTreatmentImages/CheatSheetTwo.png";
+import MechanismOne from "../../images/weightLossTreatmentImages/MechanismOne.png";
+import MechanismTwo from "../../images/weightLossTreatmentImages/MechanismTwo.png";
+import MechanismThree from "../../images/weightLossTreatmentImages/MechanismThree.png";
 
 function WeightLossTreatment() {
   const [activeTab, setActiveTab] = useState("lifestyle");
@@ -143,6 +148,18 @@ function WeightLossTreatment() {
                 className="FoodCheatSheet"
                 src={FoodCheatSheet}
                 alt="Protein, Fiber and Healthy Fats Table"
+              ></img>
+
+              <img
+                className="CheatSheetOne"
+                src={CheatSheetOne}
+                alt="Protein"
+              ></img>
+
+              <img
+                className="CheatSheetTwo"
+                src={CheatSheetTwo}
+                alt="Fiber and Healthy Fats Table"
               ></img>
             </div>
 
@@ -297,7 +314,7 @@ function WeightLossTreatment() {
                 important to understand how they work to reap their full
                 benefits.{" "}
               </p>
-              <p className="WeightSectionOneParagraph PhotoHeader">
+              <p className="WeightSectionOneParagraph">
                 Weight-loss medicines follow one of the following mechanisms:
               </p>
               <img
@@ -307,6 +324,11 @@ function WeightLossTreatment() {
               ></img>
 
               <div className="WeightLossSectionFooterContainer">
+                <img
+                  className="MechanismOne"
+                  src={MechanismOne}
+                  alt="Intestine"
+                ></img>
                 <div className="WeightArrowAndFooter">
                   <i class="WeightArrow"></i>
                   <div className="WeightLossFooter">
@@ -314,6 +336,11 @@ function WeightLossTreatment() {
                     gastrointestinal system
                   </div>
                 </div>
+                <img
+                  className="MechanismTwo"
+                  src={MechanismTwo}
+                  alt="Stomach"
+                ></img>
                 <div className="WeightArrowAndFooter">
                   <i
                     class="WeightArrow"
@@ -323,7 +350,11 @@ function WeightLossTreatment() {
                     increase fullness (satiety) after a meal
                   </div>
                 </div>
-
+                <img
+                  className="MechanismThree"
+                  src={MechanismThree}
+                  alt="Brain"
+                ></img>
                 <div className="WeightArrowAndFooter">
                   <i class="WeightArrow"></i>
                   <div className="WeightLossFooter">
