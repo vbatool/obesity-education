@@ -2,6 +2,7 @@ import React from "react";
 import "./ChallengesOfWeightLoss.css";
 import COWLLandingImage from "../../images/ChallengesOfWeightLossImages/COWLLandingImage.png";
 import SetPointTheory from "../../images/ChallengesOfWeightLossImages/SetPointTheory.mp4";
+import SetPointTheoryTwo from "../../images/ChallengesOfWeightLossImages/SetPointTheoryTwo.mp4";
 
 function ChallengesOfWeightLoss() {
   return (
@@ -81,7 +82,7 @@ function ChallengesOfWeightLoss() {
         <h3 className="COWLSectionTwoVideoHeader">Set Point Theory</h3>
 
         <video className="COWLVideo" autoPlay muted playsInline loop>
-          <source src={SetPointTheory} type="video/mp4" />
+          <source src={SetPointTheoryTwo} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
