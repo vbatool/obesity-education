@@ -374,7 +374,7 @@
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    height: 175vw;
+    height: 150vw;
   }
 
   .HSSectionTwo {
@@ -515,6 +515,9 @@
     max-width: 100%;
     height: auto;
     align-self: center;
+  }
+  .ScreeningsChecklist {
+    width: 60vw;
   }
   .VisitsTimeline {
     width: 110vw;

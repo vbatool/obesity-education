@@ -1,7 +1,6 @@
 import React from "react";
 import "./ChallengesOfWeightLoss.css";
 import COWLLandingImage from "../../images/ChallengesOfWeightLossImages/COWLLandingImage.png";
-import SetPointTheory from "../../images/ChallengesOfWeightLossImages/SetPointTheory.mp4";
 import SetPointTheoryTwo from "../../images/ChallengesOfWeightLossImages/SetPointTheoryTwo.mp4";
 
 function ChallengesOfWeightLoss() {

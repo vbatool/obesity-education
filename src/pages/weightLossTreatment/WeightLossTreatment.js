@@ -18,6 +18,7 @@ import CheatSheetTwo from "../../images/weightLossTreatmentImages/CheatSheetTwo.
 import MechanismOne from "../../images/weightLossTreatmentImages/MechanismOne.png";
 import MechanismTwo from "../../images/weightLossTreatmentImages/MechanismTwo.png";
 import MechanismThree from "../../images/weightLossTreatmentImages/MechanismThree.png";
+import SurgeryCareMobile from "../../images/weightLossTreatmentImages/SurgeryCareMobile.png";
 
 function WeightLossTreatment() {
   const [activeTab, setActiveTab] = useState("lifestyle");
@@ -492,6 +493,12 @@ function WeightLossTreatment() {
                 src={SurgeryCare}
                 alt="Surgery Care Insights"
               ></img>
+
+              <img
+                className="SurgeryCareMobile"
+                src={SurgeryCareMobile}
+                alt="Surgery Care Insights"
+              ></img>
             </div>
 
             <div className="BariatricSectionTwo">
@@ -545,6 +552,8 @@ function WeightLossTreatment() {
                       src={SleeveGastrectomy}
                       alt="Gastric Sleeve"
                     ></img>
+
+                    <div className="GastricFooter">Sleeve Gastrectomy</div>
                   </div>
                 </div>
 
@@ -594,6 +603,7 @@ function WeightLossTreatment() {
                       src={GastricBypass}
                       alt="Roux-en-Y"
                     ></img>
+                    <div className="GastricFooter">Gastric Bypass</div>
                   </div>
                 </div>
 

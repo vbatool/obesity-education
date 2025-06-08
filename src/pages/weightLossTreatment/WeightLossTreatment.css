@@ -439,6 +439,10 @@
   word-spacing: 0.25rem;
 }
 
+.SurgeryCareMobile {
+  display: none;
+}
+
 .BariatricSectionOneHeaderTwo {
   font-size: 2.25rem;
   font-family: "Playfair Display", serif;
@@ -552,6 +556,13 @@
   font-family: "Roboto", sans-serif;
   font-weight: 600;
   margin-bottom: 1rem;
+}
+
+.GastricFooter {
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  display: none;
 }
 
 .BariatricSectionTwoListHeader {
@@ -697,12 +708,15 @@
   .BariatricSectionOneParagraph,
   .RiskParagraph,
   .BariatricSectionTwoParagraph,
-  .BariatricSectionTwoContentHeader,
   .BariatricSectionTwoListHeader,
   .BariatricSectionTwoListItem,
   .BariatricSectionTwoListParagraph,
   .BariatricSectionThreeParagraph {
     font-size: 1rem;
+  }
+
+  .GastricFooter {
+    display: block;
   }
 
   .LifestyleSectionTwoHeader,
@@ -845,8 +859,13 @@
     text-align: center;
   }
 
+  .SurgeryCareMobile {
+    width: 90vw;
+    display: block;
+  }
+
   .SurgeryCare {
-    width: 110vw;
+    display: none;
   }
   .FoodCheatSheet {
     display: none;
@@ -885,14 +904,28 @@
   .WeightLossSectionFooterContainer {
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
-    margin-bottom: 1rem;
+    gap: 0rem;
+    margin-bottom: -2rem;
   }
 
   .MechanismOne,
   .MechanismTwo,
   .MechanismThree {
     display: block;
+  }
+
+  .MechanismOne {
+    width: 40vw;
+    margin-bottom: -1rem;
+  }
+  .MechanismTwo,
+  .MechanismThree {
+    width: 27vw;
+    margin-bottom: 1rem;
+  }
+
+  .WeightArrowAndFooter {
+    margin-bottom: 4rem;
   }
 
   .WeightLossMechanisms {
