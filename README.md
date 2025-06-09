@@ -31,7 +31,7 @@ Incomplete Pages:
 
 Technical Design:
 
-The website was developed using React, HTML, and CSS.
+The website was developed using React, JS, HTML, and CSS.
 
 Responsive Design:
 
