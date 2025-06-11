@@ -14,7 +14,6 @@ function App() {
     <Router>
       <TopScroll />
       <NavigationBar />
-
       <Routes>
         <Route
           path="/dartmouth-health-obesity-education"
