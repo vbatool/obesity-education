@@ -701,15 +701,15 @@ function WeightLossTreatment() {
           <div className="WLTSectionOneHeader">Weight Loss Treatment</div>
           <div className="WLTSectionOneParagraph">
             There is no one approach that works for lasting weight loss and
-            dieting <br></br> alone is definitely not enough. Long-term weight
-            loss and management <br></br>might involve a combination of
-            different medical options. Working closely <br></br>with your
+            dieting alone is definitely not enough. Long-term weight
+            loss and management might involve a combination of
+            different medical options. Working closely with your
             provider to design a plan suited to your condition, lifestyle and{" "}
-            <br></br> other needs is the best way to go.
+             other needs is the best way to go.
             <br></br>
             <br></br>
             Keep reading to learn about three different approaches to achieving
-            weight <br></br> loss.
+            weight loss.
           </div>
         </div>
         <div className="WLTSectionOneRight">

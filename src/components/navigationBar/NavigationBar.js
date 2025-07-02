@@ -134,7 +134,7 @@ function NavigationBar() {
               )}
             </li>
             <li>
-              <Link className="NavigationBarLinkItem" onClick={closeMenu}>
+              <Link className="NavigationBarLinkItem" to="/patient-stories">
                 Patient Stories
               </Link>
             </li>

@@ -2,7 +2,7 @@
   "name": "dartmouth-health-obesity-education",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://oizokun101.github.io/dartmouth-health-obesity-education",
+  "homepage": "https://vbatool.io/dartmouth-health-obesity-education",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",

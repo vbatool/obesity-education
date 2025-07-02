@@ -355,12 +355,16 @@ function HomePage() {
                 similar or have <br></br> overcome similar health challenges in
                 the past.
               </p>
-              <div class="LearnMoreButton">
-                <div class="ArrowCircle" style={{ backgroundColor: "#EEEAFD" }}>
-                  <span class="LearnMoreText">Learn more</span>
-                  <i class="Arrow"></i>
+              <Link
+                to={"/patient-stories"}
+              >
+                <div class="LearnMoreButton">
+                  <div class="ArrowCircle" style={{ backgroundColor: "#EEEAFD" }}>
+                    <span class="LearnMoreText">Learn more</span>
+                    <i class="Arrow"></i>
+                  </div>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
         </div>

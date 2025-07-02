@@ -24,7 +24,7 @@
 }
 
 .MHAWSectionOneParagraph {
-  font-size: 1.25rem;
+  font-size: 1.20rem;
   font-family: "Roboto", sans-serif;
   font-weight: 100;
   color: #a8fffc;
@@ -65,11 +65,11 @@
   font-size: 2rem;
   text-align: left;
   align-self: flex-start;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 .MHAWSSectionTwoParagraph {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-family: "Roboto", sans-serif;
   font-weight: 200;
   text-align: left;
@@ -107,11 +107,11 @@
   font-size: 2rem;
   text-align: left;
   align-self: flex-start;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 .MHAWSSectionThreeParagraph {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-family: "Roboto", sans-serif;
   font-weight: 200;
   text-align: left;
@@ -126,7 +126,7 @@
 }
 
 .MHAWSectionFourRight {
-  width: 55%;
+  width: 50%;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -135,7 +135,7 @@
 }
 
 .MHAWSectionFourLeft {
-  width: 45%;
+  width: 55%;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -144,7 +144,7 @@
 }
 
 .MHAWSSectionFourParagraph {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-family: "Roboto", sans-serif;
   font-weight: 200;
   text-align: left;
@@ -170,7 +170,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  padding-left: 5rem;
+  padding-left: 4rem;
 }
 
 .MHAWSectionFiveRight {
@@ -187,11 +187,11 @@
   font-size: 2rem;
   text-align: left;
   align-self: flex-start;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 .MHAWSSectionFiveParagraph {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-family: "Roboto", sans-serif;
   font-weight: 200;
   text-align: left;

@@ -1,0 +1,565 @@
+.PatientNarratives {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+  }
+
+  /* SECTION ONE  */
+  
+  .PNSectionOne {
+    background-color: #e9f9f9;
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 18rem 4rem;
+  }
+  
+.PNHeaderWrapper {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  z-index: 2;
+}
+  .PNSectionOneHeader {
+    font-size: 3rem;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    margin-left: 1.0rem;
+    color: #004240;
+  }
+  .PNSectionOneParagraph {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 1.375rem; /* 22px */
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #004240;
+    margin-top: 1.5rem;
+    margin-bottom: 5rem;
+    max-width: 800px;
+  }
+  .Ellipse110{
+    position: absolute;
+    top: -90px;
+    left: -100px;
+    width: 500px;
+    height: 500px;
+    /* border: 2px solid rgba(0, 0, 0, 0.05);  */
+    /* border-radius: 50%; */
+    z-index: 0;
+    }
+    .Ellipse111{
+      position: absolute;
+      top: -5px;
+      left: 0px;
+      width: 500px;
+      height: 500px;
+      /* border: 2px solid rgba(0, 0, 0, 0.05);  */
+      /* border-radius: 50%; */
+      z-index: 0;
+    }
+    .Ellipse109{
+      position: absolute;
+      top: 460px;
+      left: 530px;
+    }
+    
+    .Ellipse108 {
+      position: absolute;
+      top: 480px;
+      left: 550px;
+  }
+  
+  .SquiggleLeft{
+      position: absolute;
+      left: 200px;
+      margin-right: 10px;
+  }
+  .SquiggleRight2{
+      position: absolute;
+      right: 200px;
+      top: 440px;
+  }
+  .SquiggleRight {
+      position: absolute; 
+      right: 0;
+    }
+    /* section one with responsive adjustments  */
+    @media screen and (max-width: 1250px)  {
+
+      wrappeer {
+        width: 100%;
+        padding: 0 2rem;
+      }
+      .PNSectionOne {
+        padding: 5rem 1.5rem;
+  
+      }
+    
+      .PNSectionOneHeader,
+      .PNSectionTwoHeader {
+        font-size: 2rem;
+      }
+    
+      .PNSectionOneParagraph {
+        font-size: 1rem;
+      }
+    
+      
+    
+      .PNCardBox {
+        width: 100%;
+        height: auto;
+      }
+    
+      .Ellipse110, .Ellipse111, .Ellipse108, .Ellipse109, .SquiggleLeft, .SquiggleRight, .SquiggleRight2 {
+        display: none; /* optional: hide decorative elements on mobile */
+      }
+    }
+    
+  
+
+  /* SECTION ONE A  */
+  .PNSectionOneA {
+    background-color: #004240;
+    padding: 7rem 2rem;
+  }
+  .PNSectionOneAP {
+    color: white;
+    font-size: 1.5rem;
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    line-height: 1.6;
+    text-align: center;
+    max-width: 1500px;
+    margin-left: 8rem;
+    margin-right: 8rem;
+  }
+  /* Section one A with responsive adjustments */
+  @media (max-width: 768px) {
+    .PNSectionOneA {
+      padding: 3rem 1rem;
+    }
+  
+    .PNSectionOneAP {
+      font-size: 1.2rem;
+      margin-left: 0;
+      margin-right: 0;
+      max-width: 100%;
+      text-align: left; 
+    }
+  }
+  
+  /* SECTION TWO */
+  .PNSectionTwo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .PNSectionTwoHeader {
+    font-size: 2.5rem;
+    font-family: "Playfair Display", serif;
+    color: #004240;
+    width: 100%;
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  
+  .QuoteCard {
+    background-color: #fefaf2;
+    border: 2px solid #004240;
+    border-radius: 1rem;
+    padding: 3rem;
+    max-width: 800px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+  }
+  
+  .QuoteText {
+    font-family: "Playfair Display", serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    line-height: 2.5rem;
+    margin-bottom: 2rem;
+    color: #001e1d;
+  }
+  
+  .QuoteAuthor {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    color: #222;
+    margin-bottom: 1rem;
+  }
+  
+  .QuoteControls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .ArrowBtn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #004240;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .ArrowBtn:hover {
+    transform: scale(1.2);
+  }
+  
+  .Pagination {
+    font-size: 1rem;
+    color: #004240;
+  }
+  
+  /* SECTION THREE WITH QUOTES */
+  .PNSection {
+    width: 100%;
+    /* padding: 5rem 5%; */
+    box-sizing: border-box;
+  }
+  
+  .PNSectionHeader {
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: "Playfair Display", serif;
+    color: #004240;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  
+  .PNQuoteRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 5rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .PNTextColumn {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+  }
+  
+  .PNSubText {
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+    font-weight: 500;
+    color: #004240;
+    margin-bottom: 1rem;
+  }
+  
+  .PNQuoteBox {
+
+    padding: 1rem;
+    
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: black;
+  }
+  
+  .PNQuoteBox strong {
+    font-weight: 600;
+  }
+  
+  .PNAuthor {
+    margin-top: 1rem;
+    font-size: 16px;
+    margin-left: 1rem;
+    color: #555;
+  }
+  
+.PNQuoteImage {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: contain;
+}
+/* responsive adjustment to the images in the quotes */
+@media (max-width: 768px) {
+  .PNQuoteRow {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .PNQuoteImage {
+    width: 80%; 
+    margin-top: 1rem;
+  }
+
+  .PNTextColumn {
+    max-width: 100%;
+    text-align: center;
+  }
+}
+
+/* Action stories section*/
+  .PNSectionFive {
+    text-align: center;
+    background-color: white;
+    padding: 4rem 4rem 4rem 4rem;
+  }
+  
+  .PNSectionFiveHeader {
+    font-family: "Playfair Display", serif;
+    font-size: 2.5rem;
+    color: #004240;
+    font-weight: 600;
+    margin-bottom: 5rem;
+  }
+  
+  .PNSectionFiveText {
+    font-family: "Playfair Display", serif;
+    font-size: 28px;
+    max-width: 1200px;
+    margin: 3rem auto;
+    color: #222;
+    line-height: 1.6;
+  }
+  
+  .PNSectionFiveGrid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .PNCardBox {
+    font-family: "Playfair Display", serif;
+    background-color: #f5f5f5;
+    border: 2px solid #8b1c1c;
+    border-radius: 12px;
+    width: 273px;     
+    height: 166px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #222;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  /* Offset middle card upward */
+  .PNCardBox.t-middle {
+    transform: translateY(-20px);
+  }
+  
+  /* Offset middle card downward */
+  .PNCardBox.b-middle {
+    transform: translateY(20px);
+  }
+  
+  /* Reset for small screens */
+  @media screen and (max-width: 768px) {
+    .PNCardBox.t-middle,
+    .PNCardBox.b-middle {
+      transform: none;
+    }
+  }
+  
+  
+  /* SECTION SIX IMPROVEMENT */
+  .PNSectionSix {
+    padding: 4rem 2rem 6rem 2rem; 
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  .PNSectionSixHeader {
+    font-family: "Playfair Display", serif;
+    font-size: 32px;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    color: #004240;
+  }
+  
+  .PNSectionSixText {
+    max-width: 1000px;
+    margin: 0 auto 3rem;
+    color: #444;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+  
+  .PNNotesGrid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+  .MobileQuotes {
+    display: none;
+  }
+  /* Responsive adjustments to the mobile version of the section six quotes*/
+  .MobileQuotes {
+    display: none;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .MobileQuotes {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      padding: 1.5rem;
+    }
+  
+    .MobileQuote {
+      border-radius: 12px;
+      padding: 1.2rem 1.5rem;
+      font-family: "Playfair Display", serif;
+      font-size: 1.05rem;
+      line-height: 1.6;
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.08);
+      position: relative;
+    }
+  
+    .MobileQuote::before {
+      content: "";
+      width: 40px;
+      height: 4px;
+      background-color: rgba(0, 0, 0, 0.1);
+      position: absolute;
+      top: 10px;
+      left: 20px;
+      transform: rotate(-5deg);
+    }
+  
+    .QuoteAuthor {
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-size: 0.9rem;
+      margin-bottom: 0.75rem;
+      color: #222;
+    }
+  
+    .MobileQuote.pink {
+      background-color: #fddcdc;
+    }
+  
+    .MobileQuote.purple {
+      background-color: #e3dbfc;
+    }
+  
+    .MobileQuote.yellow {
+      background-color: #fef6c9;
+    }
+    .PNSectionSixImage{
+      display: none;
+    }
+  }
+  
+
+
+  
+  /* SECTION SEVEN: STORY CTA */
+  .PNSectionSeven {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0d0d0d;
+    color: white;
+    padding: 5rem 2rem;
+    row-gap: 0.5rem;
+    font-family: "Roboto";
+  }
+  
+  .PNSectionSevenImage {
+   
+  
+    border-radius: 10px;
+    /* margin-left: 10rem; */
+  }
+  
+  .PNSectionSevenContent {
+    max-width: 500px;
+    flex: 1;
+    margin-right: 10rem;
+    margin-bottom: 12rem;
+   
+    padding-top: 1rem; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  
+  }
+  
+  .PNSectionSevenContent h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 2.1rem;
+    margin-bottom: 1rem;
+    margin-left: 2.5rem;
+  }
+  
+  .PNSectionSevenContent p {
+    font-size: 1.2rem;
+    line-height: 1.0;
+    margin-bottom: 1.5rem;
+    margin-left: 2.5rem;
+  }
+  
+  .PNSectionSevenContent button {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 2.5rem;
+  }
+
+  
+  
+  /* responsive adjustment to just section seven */
+  @media (max-width: 768px) {
+    .PNSectionSeven {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+  
+    .PNSectionSevenContent {
+      margin-right: 0;
+      margin-bottom: 2rem;
+      padding-top: 0;
+      max-width: 100%;
+    }
+  
+    .PNSectionSevenContent h2 {
+      font-size: 24px;
+    }
+  
+    .PNSectionSevenContent p {
+      font-size: 16px;
+    }
+  
+    .PNSectionSevenImage {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+    }
+  }
+  
