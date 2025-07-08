@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/obesity-education/static/css/main.bd3d2d42.css",
-    "main.js": "/obesity-education/static/js/main.f669ff6f.js",
+    "main.js": "/obesity-education/static/js/main.6ceda1bd.js",
     "static/js/453.a9ff1746.chunk.js": "/obesity-education/static/js/453.a9ff1746.chunk.js",
     "static/media/closingWoman.png": "/obesity-education/static/media/closingWoman.736e1c4ab6b88c6570eb.png",
     "static/media/LandingImage.png": "/obesity-education/static/media/LandingImage.1ebe63a5a8209cf96e52.png",
@@ -68,11 +68,11 @@
     "static/media/ThinkingImage.png": "/obesity-education/static/media/ThinkingImage.9104f6bb5c503ef4179d.png",
     "index.html": "/obesity-education/index.html",
     "main.bd3d2d42.css.map": "/obesity-education/static/css/main.bd3d2d42.css.map",
-    "main.f669ff6f.js.map": "/obesity-education/static/js/main.f669ff6f.js.map",
+    "main.6ceda1bd.js.map": "/obesity-education/static/js/main.6ceda1bd.js.map",
     "453.a9ff1746.chunk.js.map": "/obesity-education/static/js/453.a9ff1746.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bd3d2d42.css",
-    "static/js/main.f669ff6f.js"
+    "static/js/main.6ceda1bd.js"
   ]
 }
