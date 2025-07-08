@@ -61,7 +61,7 @@ function NavigationBar() {
         <div className="NavigationBarLeft">
           <div className="LogoContainer">
             <Link
-              to="/dartmouth-health-obesity-education"
+              to="/obesity-education"
               className="NavigationBarLinkItem"
               onClick={closeMenu}
             >
