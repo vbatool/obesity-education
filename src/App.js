@@ -17,7 +17,7 @@ function App() {
       <NavigationBar />
       <Routes>
         <Route
-          path="/dartmouth-health-obesity-education"
+          path="/obesity-education"
           element={<HomePage />}
         />
         <Route
